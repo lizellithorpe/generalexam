@@ -33,8 +33,8 @@ time to discover which physical processes govern the behavior of extrasolar worl
 and observational astronomy, where an influx of exoplanet observational data has dovetailed nicely with a surge in advancements in numerical algorithms
 over the last two decades. \\
 \indent It has been long thought that most stars spend some of their early lives in a cluster environement, a large scale sphere of gas that acts as a stellar nursery
- that condense into pre-stellar cores in the gas and dust (\cite{lad03}). Recent work has also indicated that the theory(\cite{kro95}) of the majority of stars 
- being born in a stellar multiple is true, where their dense pre-stellar cores mutually bound together in a dusty envelope (\cite{sad17}). 
+ that condense into pre-stellar cores in the gas and dust (\cite{lad03}). Recent work(\cite{sad17}) has also bolstered that the theory(\cite{kro95}) that the majority of stars 
+ are born in a stellar multiple is true, where their dense pre-stellar cores mutually bound together in a dusty envelope. 
  These multiple bound cores, likely formed
  via fragmentation (\cite{bon94},\cite{bat03},\cite{tur09}) either stay together in a binary as interactions with their gaseous
  disk decrease the separation between the pair (\cite{bat00},\cite{bat03}), or are pulled apart by a cluster environment(\cite{kro01}). 
@@ -53,12 +53,13 @@ over the last two decades. \\
  produced by hybrid symplectic integration scheme, we offer a new perspective at this complex problem. 
 \subsection{Previous Work}
 The presence of a binary companion has been considered in studies of planetary formation since the 1960's. Early treatments of planetary stability in a binary system worked
-within the framework of the restricted 3-body problem (Huang 1960) and numerical estimates based on analytic models (Heppenheimer). Early work established that 
+within the framework of the restricted 3-body problem (\cite{hua60}) and numerical estimates based on analytic models (\cite{hep78}). Early work established that 
 both the formation and the stability of planets in a binary system was possible.\\
-Later on, numerical integration to evolve these systems began in earnest, owing largely to developments in symplectic integration methods (\cite{wis91}) that 
+Later on, numerical integration to evolve these systems began in earnest, owing largely to developments in symplectic integration methods (such as the work described 
+by \cite{wis91}) that 
 allowed for efficient integrations of entire planetary systems in the presence of a binary. The main question that arises in such a system is in what cases does a binary 
 companion preclude the existence of stable planets. An early work that used the Wisdom-Holman scheme is the exploration of the Alpha Centauri system in \cite{wie97},
-in which the authors 
+in which the authors use N-Body integrations in the \cite{wis91} scheme to assess the stability of test particles in and around the Alpha Centauri triplet. \\
 The seminal works in the field of planetary stability in a binary system are \cite{dvo86} and \cite{hol99}. \cite{dvo86} looked at integrating systems of test
 particles in the
 the restricted 3-body problem with the Lie series method (Delva 1985) and established an upper and lower critical orbit that began mapping a region of stability 
@@ -69,7 +70,7 @@ with both p-type and s-type planets. Their integration work, based on the Wisdom
  produced an analytic form of a planet's critical orbit based on both the eccentricity of the binary and the mass
 ratio $\mu = \frac{M_{bin}}{M_{primary}}$. Also drawing on \cite{wis91} is the work described in \cite{ina97}, in which the solar system is integrated in the presence of a 
 binary. The authors exemplify the Kozai effect (\cite{koz62}) in which an inclined binary exchanges angular momentum with the planets, and also show that the planets evolve in concert 
-as a rigid disk. This work revealed that the Kozai effect can lead to increased eccentricity of planets. Another analysis of the Kozai effect on planetary stability that 
+as a rigid disk. This work revealed that the Kozai effect is a pathway that can lead to increased eccentricity of planets. Another analysis of the Kozai effect on planetary stability that 
 takes a different, secular approach is \cite{fab07}, in which the authors integrate the motion of planets in the presence of a binary to show that tidal friction can circularize an 
 orbit made eccentric by an inclined binary companion.\\
 The stability analysis of Holman \& Wiegert remains of interest to this day, with recent work such as \cite{lam18} further refining
@@ -120,26 +121,30 @@ the preservation of phase space in symplectic schemes is dependent on a permanen
 a system with a hierarchical composition (i.e., the Keplerian motion of the planets is a much larger part of the Hamiltonian that perturbations from a distant star).
 \cite{sah94} showed that the limitation of a fixed timestep could be partially overcome by assigning a different timestep to different bodies in an integration. This
 can lead to an increase in efficiency for systems in which bodies have different orbital periods and therefore require different timescales. 
-\indent Some early applications of these MVS integrators include SyMBA described in \cite{dun98} and the \textit{Mercury} 
+\indent Some early applications of these MVS integrators include \textit{SyMBA} described in \cite{dun98} and the \textit{Mercury} 
 integrator by \cite{cha99}. SyMBA addresses the inability of symplectic integrations to change the value of timesteps via judicious splitting of the Hamiltonian,
-in which strong perturbative terms have comparatively smaller timesteps(\cite{dun98}). 
- \textit{Mercury} was an advancement in the field of planetary dynamics in that it retained the advantages of a symplectic scheme 
+in which strong perturbative terms have comparatively smaller timesteps(\cite{dun98}). \cite{cha99} cites this choice as difficult to implement, and instead 
+took a hybrid approach in the creation of \textit{Mercury}. \\
+ \textit{Mercury} was a similar advancement to \textit{SyMBA} in the field of planetary dynamics in that it was a \cite{wis91} scheme that retained the advantages of a symplectic scheme 
 (i.e., no build up of error in energy except due to numerical round off) but allowed for close encounters between bodies. \textit{Mercury} and previous work by \cite{sah94}
 addressed the adaptive time step issue by allowing disparate bodies in the integration to have different time steps, as long as those assigned time steps 
 did not change during the course of the integration. This is useful for instance if a modeled planetary system
 has bodies with very different orbital periods.
 Still, the need for adaptive time steps can be seen in the case of a close approach between
-two bodies where the characteristic timescale of the encounter can be quite a bit smaller than the original time steps. Instead of requiring symplectic schemes
-with close approaches to have prohibitively small time steps, the idea of a hybrid symplectic integrator came about. In \textit{Mercury}, the Hamiltonian that describes
-the interacting bodies can be split into a Keplerian part, normally the largest portion, and an interaction part that dominates when two bodies 
+two bodies where the characteristic timescale of the encounter can be quite a bit smaller than the original time steps. 
+%Instead of requiring symplectic schemes
+%with close approaches to have prohibitively small time steps, the idea of a hybrid symplectic integrator came about. 
+In \textit{Mercury} and other integrators (\cite{dun98},\cite{ric00}), the Hamiltonian that describes
+can be split and integrated separately(\cite{yos90},\cite{sah92}). In \textit{Mercury}, it is split into a Keplerian portion, which for most of the 
+integration is the largest portion, and an interaction part that dominates when two bodies 
 approach one another. As the interaction part is normally small except when two bodies are close, the Keplerian part of the Hamiltonian is comparably large and can be solved
 analytically, greatly increasing the speed of the integrator. \\
-\indent A change came to the \textit{Mercury} code as authors then turned to the next problem: the inclusion of additional massive bodies, such as a 
+\indent A change came to the \textit{Mercury} code as authors(\cite{cha02}) then turned to the next problem: the inclusion of additional massive bodies, such as a 
 binary companion, that interact with the planetary system. \cite{cha02} marked the inclusion of a hierarchical coordinate system
 % \textit{democratic heliocentric} coordinate system(\cite{dun98}) 
 to allow for an additional massive body in the Hamiltonian. These coordinates allow for different time steps to be used for concentric shells around the primary star,
 such that planets orbiting the primary can have different integration time steps.
-The numerical integrator we use for this work is built on the foundation of the original \textit{Mercury} package but with significant changes
+The numerical integrator we use for this work is built on the foundation of the original \textit{Mercury} package but with changes
 to allow the inclusion of multiple bound massive bodies (i.e., a binary or triplet star system) and unbound massive bodies (i.e. stars in a cluster environment)(\cite{kai17}).
 The integration of the planetary system around the primary. We still use the democratic heliocentric coordinates for the planetary system, but the binary
 is defined relative to the center of mass of the planetary system, and the cluster stars are defined simply with their inertial coordinates. By letting the different
@@ -147,7 +152,7 @@ bodies be treated with different coordinate system, this version of \textit{Merc
 to evolve the unbound cluster stars. That is, there is not a build up of energy error, the Keplerian nature of the planetary system (while not undergoing a close approach)
 is retained, and simultaneously the cluster stars and their close approaches can be integrated efficiently in a leapfrog-like scheme. \\
 \indent These changes to \textit{Mercury} are crucial to realistic modeling of binary-planetsystems in a stellar cluster.
- In this work we are largely concerned with the overall fate of binary systems and their planets during interactions with the cluster, but the last year of 
+ In this work we are largely concerned with the overall fate of binary systems and their planets during interactions with the cluster. Moreover, our
 work has also revealed some intriguing changes in orbital architecture of planetary systems that have a close encounter with an excited binary companion.\\
 %\indent The inclusion of both the binary and the cluster environment in our simulations opens the door to exploring many existing question in planetary dynamics. One
 %such question that will be addressed in this work is the misalignment of the spin-orbit angle of gas giants with their host star. In particular, exoplanet observations

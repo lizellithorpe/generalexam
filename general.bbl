@@ -102,9 +102,15 @@ De~Rosa, R.~J., Dawson, R., \& Nielsen, E.~L. 2020, Astronomy \& Astrophysics,
 {Hao}, W., {Kouwenhoven}, M.~B.~N., \& {Spurzem}, R. 2013, \mnras, 433, 867,
   \dodoi{10.1093/mnras/stt771}
 
+\bibitem[{{Heppenheimer}(1978)}]{hep78}
+{Heppenheimer}, T.~A. 1978, \aap, 65, 421
+
 \bibitem[{{Holman} \& {Wiegert}(1999)}]{hol99}
 {Holman}, M.~J., \& {Wiegert}, P.~A. 1999, \aj, 117, 621,
   \dodoi{10.1086/300695}
+
+\bibitem[{{Huang}(1960)}]{hua60}
+{Huang}, S.-S. 1960, \pasp, 72, 106, \dodoi{10.1086/127489}
 
 \bibitem[{{Innanen} {et~al.}(1997){Innanen}, {Zheng}, {Mikkola}, \&
   {Valtonen}}]{ina97}
@@ -183,6 +189,11 @@ Plummer, H.~C. 1911, MNRAS, 71
 {Reche}, R., {Beust}, H., \& {Augereau}, J.~C. 2009, \aap, 493, 661,
   \dodoi{10.1051/0004-6361:200810419}
 
+\bibitem[{{Richardson} {et~al.}(2000){Richardson}, {Quinn}, {Stadel}, \&
+  {Lake}}]{ric00}
+{Richardson}, D.~C., {Quinn}, T., {Stadel}, J., \& {Lake}, G. 2000, \icarus,
+  143, 45, \dodoi{10.1006/icar.1999.6243}
+
 \bibitem[{Sadavoy \& Stahler(2017)}]{sad17}
 Sadavoy, S.~I., \& Stahler, S.~W. 2017, Monthly Notices of the Royal
   Astronomical Society, 469, 3881–3900, \dodoi{10.1093/mnras/stx1061}
@@ -211,5 +222,9 @@ Weidner, C., \& Kroupa, P. 2004, Monthly Notices of the Royal Astronomical
 
 \bibitem[{{Wisdom} \& {Holman}(1991)}]{wis91}
 {Wisdom}, J., \& {Holman}, M. 1991, \aj, 102, 1528, \dodoi{10.1086/115978}
+
+\bibitem[{{Yoshida}(1990)}]{yos90}
+{Yoshida}, H. 1990, Physics Letters A, 150, 262,
+  \dodoi{10.1016/0375-9601(90)90092-3}
 
 \end{thebibliography}
