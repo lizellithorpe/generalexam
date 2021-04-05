@@ -445,7 +445,8 @@ The main takeaway from this project is that the orbital architectures of survivi
   We choose to look at the 
  two inner gas giants as they are most likely to survive an instability event and thus act as good markers.
 These distributions of the final eccentricity and inclination of the inner giants are shown in Figure \ref{fig:160_ecc_inc}, 
- and a two-sample KS test shows that we can reasonably infer that they are drawn from different parent distributions. 
+ and a two-sample KS test with an extremely small p-value ($p_{KS} = 1.32e-38$ for the eccentricity distributions
+ and $p_{KS} = 1.5e-26$ for the inclinations distributions) shows that we can reasonably infer that they are drawn from different parent distributions. 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\textwidth]{fig/cumulative_ecc_inc_bigfont80.png}
@@ -461,12 +462,12 @@ inner planets will undergo a coupled evolution as if in a rigid disk (shown in w
 \subsection{Spin Orbit Misalignment \& the birth of Hot Jupiters}
 The accepted theory of planet formation is that planets form in a dusty, coplanar circumstellar disk (also called a protoplanetary
 disk). \\
-A subset of exoplanets that has created a good deal of new mysteries in the field of planetary astrophysics is the 
+A subset of exoplanets that has challenged existing theories of giant planet formation in the field of planetary astrophysics is the 
 existence of hot jupiters. Their mode of formation, while debated, is likely very closely tied to dynamics, 
 as their characteristically close position to host stars is not a viable location for in-situ formation. Locations in the disk close to the star
 where hot jupiters orbit are likely too hot for gas clouds to collapse due to gravitational instability (\cite{raf05}). As for core accretion in the inner disk,
 \cite{lee16} argues that it is unlikely that surface densities are appropriate for in-situ formation of Jupiter mass planets (although they 
-and \cite{chi13} note that in-situ super Earth formation
+and \cite{chi13} note that in-situ super Earth formation.
 by core accretion is possible without the need for fine tuning). Therefore, 
 the gas giants likely form farther out in the protoplanetary disk and somehow migrate inwards(\cite{lee16},).  This migration can occur in several ways. One is 
 smooth migration due to angular momentum exchange with a viscous gaseous disk(\cite{gol80}). \cite{lin96} suggest 
