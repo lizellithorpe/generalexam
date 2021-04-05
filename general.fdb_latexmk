@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex general"] 1617652578 "general.aux" "general.bbl" "general" 1617652680
+["bibtex general"] 1617652578 "general.aux" "general.bbl" "general" 1617652685
   "aasjournal.bst.bst" 0 -1 0 ""
   "bibliography.bib" 1617652575 44850 2b7e832987545f6efc4d1796aa350892 ""
   "general.aux" 1617652580 8725 2934becea4e1612dd4f2eb50d2ca1133 "pdflatex"
   (generated)
   "general.bbl"
   "general.blg"
-["pdflatex"] 1617652579 "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf" "general" 1617652680
+["pdflatex"] 1617652579 "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf" "general" 1617652685
   "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.aux" 1617652580 8725 2934becea4e1612dd4f2eb50d2ca1133 ""
   "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" 1617652679 49064 c9fa35fe580142befc5603483aefaa90 ""
   "/Users/lizellithorpe/Library/texmf/tex/latex/aastex631/aastex631.cls" 1614347201 239479 b28688f0c3df5a7b8dca3f903804b0ef ""
@@ -138,9 +138,9 @@
   "general.out" 1617652580 978 aaf3ed1baaacadfc10138ff4a2315503 "pdflatex"
   "general.tex" 1617652679 49064 c9fa35fe580142befc5603483aefaa90 ""
   (generated)
-  "general.aux"
-  "general.log"
-  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.log"
   "general.out"
+  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.log"
   "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf"
   "general.pdf"
+  "general.aux"
+  "general.log"
