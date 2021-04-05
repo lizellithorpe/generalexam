@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex general"] 1617641877 "general.aux" "general.bbl" "general" 1617643291
+["bibtex general"] 1617646233 "general.aux" "general.bbl" "general" 1617646235
   "aasjournal.bst.bst" 0 -1 0 ""
-  "bibliography.bib" 1617593827 40265 f5ad6473c10b1e71637451dd43d26570 ""
-  "general.aux" 1617643291 7968 a5485073989fa27e801539a1779cec65 "pdflatex"
+  "bibliography.bib" 1617646106 41639 2f2b6c421f8db3a07f787bc4207382c4 ""
+  "general.aux" 1617646234 8081 eace9569da44a15eadace52c266f5420 "pdflatex"
   (generated)
   "general.bbl"
   "general.blg"
-["pdflatex"] 1617643289 "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf" "general" 1617643291
-  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.aux" 1617643291 7968 a5485073989fa27e801539a1779cec65 ""
-  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" 1617643289 47257 59037cb53f22ccd9fbd250394d21dfac ""
+["pdflatex"] 1617646233 "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf" "general" 1617646235
+  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.aux" 1617646234 8081 eace9569da44a15eadace52c266f5420 ""
+  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" 1617646231 48444 f893578e757875eaa7c873bec1c11c30 ""
   "/Users/lizellithorpe/Library/texmf/tex/latex/aastex631/aastex631.cls" 1614347201 239479 b28688f0c3df5a7b8dca3f903804b0ef ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
@@ -133,14 +133,14 @@
   "fig/hist_num_total_stars.png" 1616608548 19444 82b8cd1cbd361b3f937b935d90d0cf34 ""
   "fig/lost_planets_mass341_51_5.png" 1616784818 268402 29f2a97176f096bb81e5583e97b55289 ""
   "fig/scatterplot_num_total_stars_nearby_spinorb.png" 1616608548 37430 a880ad94b30436dd6ccc01e326456534 ""
-  "general.aux" 1617643291 7968 a5485073989fa27e801539a1779cec65 "pdflatex"
-  "general.bbl" 1617641877 8695 bdad9190e24698401cf839632c222710 "bibtex general"
-  "general.out" 1617643291 978 aaf3ed1baaacadfc10138ff4a2315503 "pdflatex"
-  "general.tex" 1617643289 47257 59037cb53f22ccd9fbd250394d21dfac ""
+  "general.aux" 1617646234 8081 eace9569da44a15eadace52c266f5420 "pdflatex"
+  "general.bbl" 1617646233 8781 9cf8f8ca32cb9de96dad8f7dbe3fc239 "bibtex general"
+  "general.out" 1617646234 978 aaf3ed1baaacadfc10138ff4a2315503 "pdflatex"
+  "general.tex" 1617646231 48444 f893578e757875eaa7c873bec1c11c30 ""
   (generated)
-  "general.out"
-  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.log"
-  "general.aux"
   "general.pdf"
+  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.log"
   "general.log"
+  "general.aux"
+  "general.out"
   "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf"

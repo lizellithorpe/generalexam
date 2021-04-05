@@ -33,8 +33,9 @@ time to discover which physical processes govern the behavior of extrasolar worl
 and observational astronomy, where an influx of exoplanet observational data has dovetailed nicely with a surge in advancements in numerical algorithms
 over the last two decades. \\
 \indent It has been long thought that most stars spend some of their early lives in a cluster environement, a large scale sphere of gas that acts as a stellar nursery
- that condense into pre-stellar cores in the gas and dust (\cite{lad03}). Recent work has also indicated that the vast majority of stars are born in a nascent multiple, 
- their dense pre-stellar cores mutually bound together in a dusty envelope (\cite{sad17}). These multiple bound cores, likely formed
+ that condense into pre-stellar cores in the gas and dust (\cite{lad03}). Recent work has also indicated that the theory(\cite{kro95}) of the majority of stars 
+ being born in a stellar multiple is true, where their dense pre-stellar cores mutually bound together in a dusty envelope (\cite{sad17}). 
+ These multiple bound cores, likely formed
  via fragmentation (\cite{bon94},\cite{bat03},\cite{tur09}) either stay together in a binary as interactions with their gaseous
  disk decrease the separation between the pair (\cite{bat00},\cite{bat03}), or are pulled apart by a cluster environment(\cite{kro01}). 
  %Dynamical interactions from a stellar cluster have also been shown to effect the orbital architecture of existing binaires. 
@@ -238,17 +239,17 @@ than for the planets and the binary star pair.
     \vec{X}_i = \vec{x}_i \text{  for  } i>N_p+1
 \end{equation}
 \begin{equation}
-    m_i\frac{dv_{i}}{dt} = -\frac{\partial V_{Plum}}{\partial \vec{X}_i}
+    m_i\frac{dv_{i,u}}{dt} = -\frac{\partial V_{Plum}}{\partial X_{i,u}}
 \end{equation}
 \begin{equation}
-    \frac{dv_{i,u}}{dt} = \frac{-1}{m_i}\sum_{k=N_p+1}^{N_p+N_s}\frac{GM_{gas}m_kX_k\delta_{ik}}{(X_k^2+a_0^2)^{3/2}} = 
+    \frac{dv_{i,u}}{dt} = \frac{-1}{m_i}\sum_{k=N_p+1}^{N_p+N_s}\frac{GM_{gas}m_kX_{k,u}delta_{ik}}{(|\vec{X}_k|^2+a_0^2)^{3/2}} = 
     \frac{-GM_{gas}X_{i,u}}{(|\vec{X_i}|^2+a_0^2)^{3/2}}
 \end{equation}
 We can see that the acceleration due to the Plummer sphere on the cluster stars is simply a direct term based on the mass of the gas 
 enclosed by the cluster star's current position.
 \subsubsection{Planets}
 \begin{equation}
-    m_p\frac{dv_i}{dt} = -\frac{\partial V_{Plum}}{\partial X_i}
+    m_p\frac{dv_{i,u}}{dt} = -\frac{\partial V_{Plum}}{\partial X_{i,u}}
 \end{equation}
 Recall that $\Delta$ is a function of the position of the planets. The relevant partial here is:
 \begin{equation}
@@ -270,14 +271,14 @@ Recall that $\Delta$ is a function of the position of the planets. The relevant 
 \begin{equation}
 \begin{split}
     \frac{dv_{i,u}}{dt} = 
-    \frac{-GM_{gas}}{m_i}\frac{\partial}{\partial X_i}\biggl(\sum_{k=1}^{N_P}\frac{m_k}{\sqrt{|\vec{\Delta}+\vec{X}_i|^2+a_0^2}}\\
+    \frac{-GM_{gas}}{m_i}\frac{\partial}{\partial X_{i,u}}\biggl(\sum_{k=1}^{N_P}\frac{m_k}{\sqrt{|\vec{\Delta}+\vec{X}_i|^2+a_0^2}}\\
     +\frac{m_A}{\sqrt{|\vec{\Delta}|^2+a_0^2}}+\frac{m_B}{\sqrt{|\vec{\Delta}+\vec{s}+\vec{X}_B|^2+a^2_0}} \biggr )
 \end{split}
 \end{equation}
 \begin{equation}
     \begin{split}
     \frac{dv_{i,u}}{dt} = 
-    \frac{-GM_{gas}}{m_i}\biggl(\sum_{k=1}^{N_P}\frac{-m_k(\Delta_u+X_k)}{(|\vec{\Delta}+\vec{X_k}|^2+a_0^2)^{3/2}}(\frac{\partial \Delta}{\partial X_i}+
+    \frac{-GM_{gas}}{m_i}\biggl(\sum_{k=1}^{N_P}\frac{-m_k(\Delta_u+X_{k,u})}{(|\vec{\Delta}+\vec{X_k}|^2+a_0^2)^{3/2}}(\frac{\partial \Delta}{\partial X_i}+
     \frac{\partial X_k}{\partial X_i})\\+\frac{m_A\Delta_u}{(|\vec{\Delta|^2}+a_0^2)^{3/2}}\frac{m_i}{m_A+\sum_{k=1}^{N_p}m_k} \biggr)    
     \end{split}
 \end{equation}
@@ -286,7 +287,7 @@ Recall that $\Delta$ is a function of the position of the planets. The relevant 
 \begin{equation}
     \begin{split}
       \frac{dv_{i,u}}{dt} = 
-      \frac{GM_{gas}}{m_A+\sum_{j=1}^{N_P}m_j}\biggl(\sum_{k\neq i}^{N_P}\frac{m_k(\Delta_u+X_k)}{(|\vec{\Delta}+\vec{X_k}|^2+a_0^2)^{3/2}}+ 
+      \frac{GM_{gas}}{m_A+\sum_{j=1}^{N_P}m_j}\biggl(\sum_{k\neq i}^{N_P}\frac{m_k(\Delta_u+X_{k,u})}{(|\vec{\Delta}+\vec{X_k}|^2+a_0^2)^{3/2}}+ 
       \frac{m_A\Delta_u}{(|\vec{\Delta}|^2+a_0^2)^{3/2}} \biggr)\\+
        \frac{GM_{gas}(\Delta_u+X_i)}{(|\vec{\Delta}+\vec{X_i}|^2+a_0^2)^{3/2}}\biggl(\frac{-m_i}{m_A+\sum_{j=1}^{N_P}m_j}+1\biggr)
     \end{split}
@@ -296,7 +297,7 @@ Recall that $\Delta$ is a function of the position of the planets. The relevant 
 \begin{equation}
     \begin{split}
     \frac{dv_{i,u}}{dt} = 
-    \frac{GM_{gas}}{m_A+\sum_{j=1}^{N_P}m_j}\biggl(\sum_{k=1}^{N_P}\frac{m_k(\Delta_u+X_k)}{(|\vec{\Delta}+\vec{X_k}|^2+a_0^2)^{3/2}}+
+    \frac{GM_{gas}}{m_A+\sum_{j=1}^{N_P}m_j}\biggl(\sum_{k=1}^{N_P}\frac{m_k(\Delta_u+X_{k,u})}{(|\vec{\Delta}+\vec{X_k}|^2+a_0^2)^{3/2}}+
     \frac{m_A\Delta_u}{(|\vec{\Delta}|^2+a_0^2)^{3/2}} \biggr)\\ - \frac{GM_{gas}(\Delta_u+X_i)}{(|\vec{\Delta}+\vec{X_i}|^2+a_0^2)^{3/2}}   
     \end{split}
 \end{equation}
@@ -327,15 +328,15 @@ The coordinate $\Delta$ is also a function of the position of the binary. Here t
 
 \begin{equation}
     \begin{split}
-        \frac{dv_{B,u}}{dt}=-GM_{gas}\biggl(\sum_{k=1}^{N_P}\frac{-m_k(\Delta_u+X_k)}{(|\vec{\Delta}+\vec{X_k}|^2+a_0^2)^{3/2}}\frac{1}{m_A+m_B+\sum_{k=1}^{N_P}m_k} \\ 
-        + \frac{(\Delta_u+s_u+X_B)}{(|\vec{\Delta}+\vec{s}+\vec{X_B}|^2+a_0^2)^{3/2}}\bigl(1-\frac{m_B}{m_A+m_B+\sum_{k=1}^{N_P}m_k}\bigr)\\+\frac{-m_A\Delta}{(\vec{\Delta}|^2+a_0^2)^{3/2}(m_A+m_B+\sum_{k=1}^{N_P}m_k)}\biggr)
+        \frac{dv_{B,u}}{dt}=-GM_{gas}\biggl(\sum_{k=1}^{N_P}\frac{-m_k(\Delta_u+X_{k,u})}{(|\vec{\Delta}+\vec{X_k}|^2+a_0^2)^{3/2}}\frac{1}{m_A+m_B+\sum_{k=1}^{N_P}m_k} \\ 
+        + \frac{(\Delta_u+s_u+X_{B,u})}{(|\vec{\Delta}+\vec{s}+\vec{X_B}|^2+a_0^2)^{3/2}}\bigl(1-\frac{m_B}{m_A+m_B+\sum_{k=1}^{N_P}m_k}\bigr)\\+\frac{-m_A\Delta}{(\vec{\Delta}|^2+a_0^2)^{3/2}(m_A+m_B+\sum_{k=1}^{N_P}m_k)}\biggr)
     \end{split}
 \end{equation}
 \begin{equation}
     \begin{split}
-        \frac{dv_{B,u}}{dt} = \frac{GM_{gas}}{m_A+m_B+\sum_{j=1}^{N_P}m_j}\biggl(\sum_{k=1}^{N_P}\frac{m_k(\Delta_u+X_k)}{(|\vec{\Delta}+\vec{X}_k)|^2+a_0^2)^{3/2}}\\ 
-        + \frac{X_b+s_u+\Delta_u}{(|\vec{\Delta}+\vec{X}_B+\vec{s}|^2+a_0^2)^{3/2}} +\frac{m_A\Delta_u}{(|\vec{\Delta}|^2+a_0^2)^{3/2}}\biggr) - 
-        \frac{GM_{gas}(X_b+s_u+\Delta_u)}{(|\vec{\Delta}+\vec{X}_B+\vec{s}|^2+a_0^2)^{3/2}}
+        \frac{dv_{B,u}}{dt} = \frac{GM_{gas}}{m_A+m_B+\sum_{j=1}^{N_P}m_j}\biggl(\sum_{k=1}^{N_P}\frac{m_k(\Delta_u+X_{k,u})}{(|\vec{\Delta}+\vec{X}_k)|^2+a_0^2)^{3/2}}\\ 
+        + \frac{X_{B,u}+s_u+\Delta_u}{(|\vec{\Delta}+\vec{X}_B+\vec{s}|^2+a_0^2)^{3/2}} +\frac{m_A\Delta_u}{(|\vec{\Delta}|^2+a_0^2)^{3/2}}\biggr) - 
+        \frac{GM_{gas}(X_{B,u}+s_u+\Delta_u)}{(|\vec{\Delta}+\vec{X}_B+\vec{s}|^2+a_0^2)^{3/2}}
     \end{split}
 \end{equation}
 \subsection{Experimental Design}
@@ -493,15 +494,23 @@ high predicted spin-orbit angles.
 %we can infer a distribution of observable spin-orbit angles $\lambda$. Drawing from a random spin orientation of the primary star will
 %flatten our inclination distribution.
 \section{Conclusions and Future Work}
-This novel numerical integrator allows us to look at the dynamics of planets in chaotic bound stellar cluster environments. Our initial work has shown that the presence
-of cluster stars can have the effect of destabilizing a non-negligible amount of binary systems by causing the binary companion to migrate closer to the orbiting gas giants.
-In particular, we have found that these unstable systems have a significantly different orbital architecture than their stable counterparts. We can make a comparison between
-our highly inclined unstable systems and the observed population of misaligned hot jupiters. \\
+Our initial work has shown that the presence
+of cluster stars can have the effect of destabilizing a significant fraction of binary systems by causing the binary companion to migrate closer to the orbiting gas giants.
+In particular, we have found that these unstable systems have a significantly different orbital architecture than their stable counterparts. 
+%We can make a comparison between our highly inclined unstable systems and the observed population of misaligned hot jupiters. \\
 Future work with this integrator includes continuing this experiment with different initial planetary configurations and binary configurations to see how the cluster could
-perturb or destabilize these systems. There has been recent focus on the dynamics of the super-earth system $\pi$ Mensae that is host to two misaligned planets(\cite{hod21}).
-I believe that looking into a numerical experiment with super-earth or sub-neptune planets could have interesting results. \\
+perturb or destabilize these systems. For instance, we will look into varying the eccentricity distribution of the binary companion to pinpoint in parameter space
+if there are particular initial conditions more succeptible to destabilization via the cluster environment.
+%There has been recent focus on the dynamics of the super-earth system $\pi$ Mensae that is host to two misaligned planets(\cite{hod21}).
+%I believe that looking into a numerical experiment with super-earth or sub-neptune planets could have interesting results in  \\
 We also have found that in some of our simulations, there seem to be a sprinkling of new binaries and triplet groups of bound stars that form as the cluster evolves. 
-Most discussion of stellar multiple formation focuses on a nascent architecture, so this integrator could be a new route into analyzing stellar multiples.
+Most discussion of stellar multiple formation focuses on fragmentation of dense cores that examines the binary population
+at a very early stage(for example \cite{bon94}) and utilize largely smooth particle hydrodynamics, so these simulations could form an interesting dynamical approach to stellar multiple
+formation for more mature stellar systems, similar to integrations done in \cite{kro01} and \cite{moe10}. While it is thought that interactions with the primordial gas disk is the ruling
+determinant in the orbital architecture of binaries(\cite{kro01,krobur01,bat00}), it would be interesting to see where the small fraction of 
+dynamical multiples fit in the parameter space of binary separation and eccentricity. Their survival rates in the presence of their cluster environment will also 
+be of interest; that is, we would investiage the question of is the formation of multiples in this fashion a stable pathway.\cite{moe10} examined this question with a hydrodynamic
+simulation of an expanding stellar cluster, so the first course of action would be to investigate how the multiples we see fit with prior observations.
 \bibliographystyle{aasjournal.bst}
 \bibliography{bibliography.bib}
 \end{document}

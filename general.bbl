@@ -102,10 +102,6 @@ De~Rosa, R.~J., Dawson, R., \& Nielsen, E.~L. 2020, Astronomy \& Astrophysics,
 {Hao}, W., {Kouwenhoven}, M.~B.~N., \& {Spurzem}, R. 2013, \mnras, 433, 867,
   \dodoi{10.1093/mnras/stt771}
 
-\bibitem[{Hodzic {et~al.}(2021)Hodzic, Cegla, Chaplin, \& Davies}]{hod21}
-Hodzic, V.K. amd~Triaud, A. H. M.~J., Cegla, H., Chaplin, W., \& Davies, G.
-  2021, MNRAS
-
 \bibitem[{{Holman} \& {Wiegert}(1999)}]{hol99}
 {Holman}, M.~J., \& {Wiegert}, P.~A. 1999, \aj, 117, 621,
   \dodoi{10.1086/300695}
@@ -125,6 +121,9 @@ Kaib, N.~A., White, E.~B., \& Izidoro, A. 2017, Monthly Notices of the Royal
 
 \bibitem[{{Kozai}(1962)}]{koz62}
 {Kozai}, Y. 1962, \aj, 67, 591, \dodoi{10.1086/108790}
+
+\bibitem[{{Kroupa}(1995)}]{kro95}
+{Kroupa}, P. 1995, \mnras, 277, 1491, \dodoi{10.1093/mnras/277.4.1491}
 
 \bibitem[{{Kroupa}(2001)}]{kro01}
 {Kroupa}, P. 2001, in The Formation of Binary Stars, ed. H.~{Zinnecker} \&
@@ -165,6 +164,10 @@ Levison, H.~F., Duncan, M.~J., Brasser, R., , \& Kaufmann, D.~E. 2010, Science
 
 \bibitem[{{Mayor} \& {Queloz}(1995)}]{may95}
 {Mayor}, M., \& {Queloz}, D. 1995, \nat, 378, 355, \dodoi{10.1038/378355a0}
+
+\bibitem[{{Moeckel} \& {Bate}(2010)}]{moe10}
+{Moeckel}, N., \& {Bate}, M.~R. 2010, \mnras, 404, 721,
+  \dodoi{10.1111/j.1365-2966.2010.16347.x}
 
 \bibitem[{Plummer(1911)}]{plu11}
 Plummer, H.~C. 1911, MNRAS, 71
