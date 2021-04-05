@@ -1,0 +1,212 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\href{#1}{#1}}
+\providecommand{\dodoi}[1]{doi:~\href{http://doi.org/#1}{\nolinkurl{#1}}}
+\providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
+\providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
+
+\bibitem[{{Adams} {et~al.}(2006){Adams}, {Proszkow}, {Fatuzzo}, \&
+  {Myers}}]{ada06}
+{Adams}, F.~C., {Proszkow}, E.~M., {Fatuzzo}, M., \& {Myers}, P.~C. 2006, \apj,
+  641, 504, \dodoi{10.1086/500393}
+
+\bibitem[{{Allen} {et~al.}(2007){Allen}, {Megeath}, {Gutermuth}, {Myers},
+  {Wolk}, {Adams}, {Muzerolle}, {Young}, \& {Pipher}}]{all07}
+{Allen}, L., {Megeath}, S.~T., {Gutermuth}, R., {et~al.} 2007, in Protostars
+  and Planets V, ed. B.~{Reipurth}, D.~{Jewitt}, \& K.~{Keil}, 361
+
+\bibitem[{{Bate}(2000)}]{bat00}
+{Bate}, M.~R. 2000, \mnras, 314, 33, \dodoi{10.1046/j.1365-8711.2000.03333.x}
+
+\bibitem[{{Bate} {et~al.}(2003){Bate}, {Bonnell}, \& {Bromm}}]{bat03}
+{Bate}, M.~R., {Bonnell}, I.~A., \& {Bromm}, V. 2003, \mnras, 339, 577,
+  \dodoi{10.1046/j.1365-8711.2003.06210.x}
+
+\bibitem[{Batygin(2012)}]{bat12}
+Batygin, K.~A. 2012, Nature, 491, 418, \dodoi{10.1038/nature.11560}
+
+\bibitem[{{Beust}(2003)}]{beu03}
+{Beust}, H. 2003, \aap, 400, 1129, \dodoi{10.1051/0004-6361:20030065}
+
+\bibitem[{{Beust} {et~al.}(2014){Beust}, {Augereau}, {Bonsor}, {Graham},
+  {Kalas}, {Lebreton}, {Lagrange}, {Ertel}, {Faramaz}, \&
+  {Th{\'e}bault}}]{beu14}
+{Beust}, H., {Augereau}, J.~C., {Bonsor}, A., {et~al.} 2014, \aap, 561, A43,
+  \dodoi{10.1051/0004-6361/201322229}
+
+\bibitem[{{Bonnell} \& {Bate}(1994)}]{bon94}
+{Bonnell}, I.~A., \& {Bate}, M.~R. 1994, \mnras, 271, 999,
+  \dodoi{10.1093/mnras/271.4.999}
+
+\bibitem[{{Breslau} \& {Pfalzner}(2019)}]{bre19}
+{Breslau}, A., \& {Pfalzner}, S. 2019, \aap, 621, A101,
+  \dodoi{10.1051/0004-6361/201833729}
+
+\bibitem[{Carpenter {et~al.}(1997)Carpenter, Meyer, Dougados, \& Strom}]{car97}
+Carpenter, J., Meyer, M.~R., Dougados, C., \& Strom, S.~E. 1997, The
+  Astronomical Journal, 114
+
+\bibitem[{Cattolico \& Capuzzo-Dolcetta(2020)}]{cat20}
+Cattolico, R.~S., \& Capuzzo-Dolcetta, R. 2020, Astrophysics and Space Science,
+  365, \dodoi{10.1007/s10509-020-03885-4}
+
+\bibitem[{Chabrier(2003)}]{cha03}
+Chabrier, G. 2003, Publications of the Astronomical Society of the Pacific,
+  115, 763–795, \dodoi{10.1086/376392}
+
+\bibitem[{{Chambers}(1999)}]{cha99}
+{Chambers}, J.~E. 1999, \mnras, 304, 793,
+  \dodoi{10.1046/j.1365-8711.1999.02379.x}
+
+\bibitem[{{Chambers} {et~al.}(2002){Chambers}, {Quintana}, {Duncan}, \&
+  {Lissauer}}]{cha02}
+{Chambers}, J.~E., {Quintana}, E.~V., {Duncan}, M.~J., \& {Lissauer}, J.~J.
+  2002, \aj, 123, 2884, \dodoi{10.1086/340074}
+
+\bibitem[{{Chiang} \& {Laughlin}(2013)}]{chi13}
+{Chiang}, E., \& {Laughlin}, G. 2013, \mnras, 431, 3444,
+  \dodoi{10.1093/mnras/stt424}
+
+\bibitem[{{de la Fuente Marcos} \& {de la Fuente Marcos}(1997)}]{dlfm97}
+{de la Fuente Marcos}, C., \& {de la Fuente Marcos}, R. 1997, \aap, 326, L21
+
+\bibitem[{{de la Fuente Marcos} \& {de la Fuente Marcos}(1999)}]{dlfm99}
+---. 1999, \na, 4, 21, \dodoi{10.1016/S1384-1076(98)00043-8}
+
+\bibitem[{De~Rosa {et~al.}(2020)De~Rosa, Dawson, \& Nielsen}]{dro20}
+De~Rosa, R.~J., Dawson, R., \& Nielsen, E.~L. 2020, Astronomy \& Astrophysics,
+  640, A73, \dodoi{10.1051/0004-6361/202038496}
+
+\bibitem[{{Duffell} \& {Chiang}(2015)}]{duf15}
+{Duffell}, P.~C., \& {Chiang}, E. 2015, \apj, 812, 94,
+  \dodoi{10.1088/0004-637X/812/2/94}
+
+\bibitem[{{Duncan} {et~al.}(1998){Duncan}, {Levison}, \& {Lee}}]{dun98}
+{Duncan}, M.~J., {Levison}, H.~F., \& {Lee}, M.~H. 1998, \aj, 116, 2067,
+  \dodoi{10.1086/300541}
+
+\bibitem[{{Dvorak}(1986)}]{dvo86}
+{Dvorak}, R. 1986, \aap, 167, 379
+
+\bibitem[{{Fabrycky} \& {Tremaine}(2007)}]{fab07}
+{Fabrycky}, D., \& {Tremaine}, S. 2007, \apj, 669, 1298, \dodoi{10.1086/521702}
+
+\bibitem[{{Goldreich} \& {Tremaine}(1980)}]{gol80}
+{Goldreich}, P., \& {Tremaine}, S. 1980, \apj, 241, 425, \dodoi{10.1086/158356}
+
+\bibitem[{{Haghighipour} \& {Raymond}(2007)}]{hag07}
+{Haghighipour}, N., \& {Raymond}, S.~N. 2007, \apj, 666, 436,
+  \dodoi{10.1086/520501}
+
+\bibitem[{{Hao} {et~al.}(2013){Hao}, {Kouwenhoven}, \& {Spurzem}}]{hao13}
+{Hao}, W., {Kouwenhoven}, M.~B.~N., \& {Spurzem}, R. 2013, \mnras, 433, 867,
+  \dodoi{10.1093/mnras/stt771}
+
+\bibitem[{Hodzic {et~al.}(2021)Hodzic, Cegla, Chaplin, \& Davies}]{hod21}
+Hodzic, V.K. amd~Triaud, A. H. M.~J., Cegla, H., Chaplin, W., \& Davies, G.
+  2021, MNRAS
+
+\bibitem[{{Holman} \& {Wiegert}(1999)}]{hol99}
+{Holman}, M.~J., \& {Wiegert}, P.~A. 1999, \aj, 117, 621,
+  \dodoi{10.1086/300695}
+
+\bibitem[{{Innanen} {et~al.}(1997){Innanen}, {Zheng}, {Mikkola}, \&
+  {Valtonen}}]{ina97}
+{Innanen}, K.~A., {Zheng}, J.~Q., {Mikkola}, S., \& {Valtonen}, M.~J. 1997,
+  \aj, 113, 1915, \dodoi{10.1086/118405}
+
+\bibitem[{{Kaib} {et~al.}(2011){Kaib}, {Raymond}, \& {Duncan}}]{kai11}
+{Kaib}, N.~A., {Raymond}, S.~N., \& {Duncan}, M.~J. 2011, \apjl, 742, L24,
+  \dodoi{10.1088/2041-8205/742/2/L24}
+
+\bibitem[{Kaib {et~al.}(2017)Kaib, White, \& Izidoro}]{kai17}
+Kaib, N.~A., White, E.~B., \& Izidoro, A. 2017, Monthly Notices of the Royal
+  Astronomical Society, 473, 470–491, \dodoi{10.1093/mnras/stx2456}
+
+\bibitem[{{Kozai}(1962)}]{koz62}
+{Kozai}, Y. 1962, \aj, 67, 591, \dodoi{10.1086/108790}
+
+\bibitem[{{Kroupa}(2001)}]{kro01}
+{Kroupa}, P. 2001, in The Formation of Binary Stars, ed. H.~{Zinnecker} \&
+  R.~{Mathieu}, Vol. 200, 199
+
+\bibitem[{{Kroupa} \& {Burkert}(2001)}]{krobur01}
+{Kroupa}, P., \& {Burkert}, A. 2001, \apj, 555, 945, \dodoi{10.1086/321515}
+
+\bibitem[{Lada \& Lada(2003)}]{lad03}
+Lada, C., \& Lada, E. 2003, Annual Reviews of A\&A
+
+\bibitem[{{Lam} \& {Kipping}(2018)}]{lam18}
+{Lam}, C., \& {Kipping}, D. 2018, \mnras, 476, 5692,
+  \dodoi{10.1093/mnras/sty022}
+
+\bibitem[{{Lee} \& {Chiang}(2016)}]{lee16}
+{Lee}, E.~J., \& {Chiang}, E. 2016, \apj, 817, 90,
+  \dodoi{10.3847/0004-637X/817/2/90}
+
+\bibitem[{{Lee} {et~al.}(1997){Lee}, {Duncan}, \& {Levison}}]{lee97conf}
+{Lee}, M.~H., {Duncan}, M.~J., \& {Levison}, H.~F. 1997, in Astronomical
+  Society of the Pacific Conference Series, Vol.~12, Computational
+  Astrophysics; 12th Kingston Meeting on Theoretical Astrophysics, ed. D.~A.
+  {Clarke} \& M.~J. {West}, 32
+
+\bibitem[{Levison {et~al.}(2010)Levison, Duncan, Brasser, , \&
+  Kaufmann}]{lev10}
+Levison, H.~F., Duncan, M.~J., Brasser, R., , \& Kaufmann, D.~E. 2010, Science
+  Magazine, 329, \dodoi{10.1126/science.187535}
+
+\bibitem[{{Lin} {et~al.}(1996){Lin}, {Bodenheimer}, \& {Richardson}}]{lin96}
+{Lin}, D.~N.~C., {Bodenheimer}, P., \& {Richardson}, D.~C. 1996, \nat, 380,
+  606, \dodoi{10.1038/380606a0}
+
+\bibitem[{{Malmberg} {et~al.}(2011){Malmberg}, {Davies}, \& {Heggie}}]{mal11}
+{Malmberg}, D., {Davies}, M.~B., \& {Heggie}, D.~C. 2011, \mnras, 411, 859,
+  \dodoi{10.1111/j.1365-2966.2010.17730.x}
+
+\bibitem[{{Mayor} \& {Queloz}(1995)}]{may95}
+{Mayor}, M., \& {Queloz}, D. 1995, \nat, 378, 355, \dodoi{10.1038/378355a0}
+
+\bibitem[{Plummer(1911)}]{plu11}
+Plummer, H.~C. 1911, MNRAS, 71
+
+\bibitem[{{Proszkow} \& {Adams}(2009)}]{pro09}
+{Proszkow}, E.-M., \& {Adams}, F.~C. 2009, \apjs, 185, 486,
+  \dodoi{10.1088/0067-0049/185/2/486}
+
+\bibitem[{{Rafikov}(2005)}]{raf05}
+{Rafikov}, R.~R. 2005, \apjl, 621, L69, \dodoi{10.1086/428899}
+
+\bibitem[{{Reche} {et~al.}(2009){Reche}, {Beust}, \& {Augereau}}]{rec09}
+{Reche}, R., {Beust}, H., \& {Augereau}, J.~C. 2009, \aap, 493, 661,
+  \dodoi{10.1051/0004-6361:200810419}
+
+\bibitem[{Sadavoy \& Stahler(2017)}]{sad17}
+Sadavoy, S.~I., \& Stahler, S.~W. 2017, Monthly Notices of the Royal
+  Astronomical Society, 469, 3881–3900, \dodoi{10.1093/mnras/stx1061}
+
+\bibitem[{{Saha} \& {Tremaine}(1992)}]{sah92}
+{Saha}, P., \& {Tremaine}, S. 1992, \aj, 104, 1633, \dodoi{10.1086/116347}
+
+\bibitem[{{Saha} \& {Tremaine}(1994)}]{sah94}
+---. 1994, \aj, 108, 1962, \dodoi{10.1086/117210}
+
+\bibitem[{{Tokovinin} \& {Kiyaeva}(2016)}]{tok16}
+{Tokovinin}, A., \& {Kiyaeva}, O. 2016, \mnras, 456, 2070,
+  \dodoi{10.1093/mnras/stv2825}
+
+\bibitem[{{Turk} {et~al.}(2009){Turk}, {Abel}, \& {O'Shea}}]{tur09}
+{Turk}, M.~J., {Abel}, T., \& {O'Shea}, B. 2009, Science, 325, 601,
+  \dodoi{10.1126/science.1173540}
+
+\bibitem[{Weidner \& Kroupa(2004)}]{wei04}
+Weidner, C., \& Kroupa, P. 2004, Monthly Notices of the Royal Astronomical
+  Society, 348, 187–191, \dodoi{10.1111/j.1365-2966.2004.07340.x}
+
+\bibitem[{{Wiegert} \& {Holman}(1997)}]{wie97}
+{Wiegert}, P.~A., \& {Holman}, M.~J. 1997, \aj, 113, 1445,
+  \dodoi{10.1086/118360}
+
+\bibitem[{{Wisdom} \& {Holman}(1991)}]{wis91}
+{Wisdom}, J., \& {Holman}, M. 1991, \aj, 102, 1528, \dodoi{10.1086/115978}
+
+\end{thebibliography}
