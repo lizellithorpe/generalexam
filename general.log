@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  5 APR 2021 16:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  6 APR 2021 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -612,18 +612,18 @@ Package rerunfilecheck Info: File `general.out' has not changed.
 (rerunfilecheck)             Checksum: AAF3ED1BAAACADFC10138FF4A2315503;978.
  ) 
 Here is how much of TeX's memory you used:
- 10301 strings out of 480608
- 145970 string characters out of 5903631
- 473837 words of memory out of 5000000
- 25886 multiletter control sequences out of 15000+600000
+ 10305 strings out of 480608
+ 146019 string characters out of 5903631
+ 473865 words of memory out of 5000000
+ 25889 multiletter control sequences out of 15000+600000
  544093 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,19n,41p,297b,582s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,19n,41p,297b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf (23 pages, 652192 bytes).
+Output written on /Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf (23 pages, 652458 bytes).
 PDF statistics:
- 626 PDF objects out of 1000 (max. 8388607)
- 563 compressed objects within 6 object streams
- 125 named destinations out of 1000 (max. 500000)
+ 628 PDF objects out of 1000 (max. 8388607)
+ 565 compressed objects within 6 object streams
+ 126 named destinations out of 1000 (max. 500000)
  148 words of extra memory for PDF output out of 10000 (max. 10000000)
 
