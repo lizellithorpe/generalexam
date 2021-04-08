@@ -52,7 +52,7 @@ over the last two decades. \\
  a binary's effect on planets and a cluster's effect on a binary, are necesscitated by the ubiquitous nature of these interactions in young systems. With N-Body simulations
  produced by hybrid symplectic integration scheme, we offer a new perspective at this complex problem. 
 \subsection{Previous Work}
-The presence of a binary companion has been considered in studies of planetary formation since the 1960's. Early treatments of planetary stability in a binary system worked
+\indent The presence of a binary companion has been considered in studies of planetary formation since the 1960's. Early treatments of planetary stability in a binary system worked
 within the framework of the restricted 3-body problem (\cite{hua60}) and numerical estimates based on analytic models (\cite{hep78}). Early work established that 
 both the formation and the stability of planets in a binary system was possible.\\
 Later on, numerical integration to evolve these systems began in earnest, owing largely to developments in symplectic integration methods (such as the work described 
@@ -60,7 +60,7 @@ by \cite{wis91}) that
 allowed for efficient integrations of entire planetary systems in the presence of a binary. The main question that arises in such a system is in what cases does a binary 
 companion preclude the existence of stable planets. An early work that used the Wisdom-Holman scheme is the exploration of the Alpha Centauri system in \cite{wie97},
 in which the authors use N-Body integrations in the \cite{wis91} scheme to assess the stability of test particles in and around the Alpha Centauri triplet. \\
-The seminal works in the field of planetary stability in a binary system are \cite{dvo86} and \cite{hol99}. \cite{dvo86} looked at integrating systems of test
+\indent The seminal works in the field of planetary stability in a binary system are \cite{dvo86} and \cite{hol99}. \cite{dvo86} looked at integrating systems of test
 particles in the
 the restricted 3-body problem with the Lie series method (Delva 1985) and established an upper and lower critical orbit that began mapping a region of stability 
 for a planet based on the eccentricity of the binary system. \cite{dvo86} looked at various eccentricities of the binary companion, but in all cases the mass of the binary and 
@@ -73,7 +73,7 @@ binary. The authors exemplify the Kozai effect (\cite{koz62}) in which an inclin
 as a rigid disk. This work revealed that the Kozai effect is a pathway that can lead to increased eccentricity of planets. Another analysis of the Kozai effect on planetary stability that 
 takes a different, secular approach is \cite{fab07}, in which the authors integrate the motion of planets in the presence of a binary to show that tidal friction can circularize an 
 orbit made eccentric by an inclined binary companion.\\
-The stability analysis of Holman \& Wiegert remains of interest to this day, with recent work such as \cite{lam18} further refining
+\indent The stability analysis of Holman \& Wiegert remains of interest to this day, with recent work such as \cite{lam18} further refining
 their original critical orbit with a neural network and integrations performed in the publically available REBOUND integrator.
  Analysis of planets in binaries continue with work 
 in \cite{cha02} in which the authors use a mixed variable symplectic method to analyze planetary accretion both in a system where the test planet orbits a primary and 
@@ -99,7 +99,7 @@ and the subsequent evolution of these young stars into binaries. They find that 
   \cite{mal11} shows that fly-bys increase the chance of planetary ejection, while \cite{bre19} shows that a cluster
 star can create a retrograde planetary orbit.  \\
 
-In summary, while there is an extensive body of work on the integration of planets in a binary system and the evolution of planets in a cluster environment, previous work
+\indent In summary, while there is an extensive body of work on the integration of planets in a binary system and the evolution of planets in a cluster environment, previous work
 largely assumes that the binary is in isolation and does not evolve due to external forces; work concerning cluster environments either model interactions as a flyby 
 or do not include a simultaneous binary system. The work we present here is novel in its approach in that it allows the binary companion to be altered by a cluster environment,
 and that we fully model the cluster rather than taking a fly by apporach. 
@@ -117,7 +117,7 @@ that could kick bodies off their Keplerian paths. An additional problem that mus
 the preservation of phase space in symplectic schemes is dependent on a permanent choice of time step (\cite{lee97conf}).
 %Additionally, pure symplectic integrators do not allow for adaptively sized time steps (\cite{lee97conf}), making
 %the choice of timescale for integrations  \\
-\cite{wis91} is the seminal work in introducing a  scheme known as a \textit{mixed variable symplectic} (MSV) integrator. Such a scheme can quickly integrate
+\indent \cite{wis91} is the seminal work in introducing a  scheme known as a \textit{mixed variable symplectic} (MSV) integrator. Such a scheme can quickly integrate
 a system with a hierarchical composition (i.e., the Keplerian motion of the planets is a much larger part of the Hamiltonian that perturbations from a distant star).
 \cite{sah94} showed that the limitation of a fixed timestep could be partially overcome by assigning a different timestep to different bodies in an integration. This
 can lead to an increase in efficiency for systems in which bodies have different orbital periods and therefore require different timescales. 
