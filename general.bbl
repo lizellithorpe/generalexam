@@ -31,6 +31,10 @@
 \bibitem[{Batygin(2012)}]{bat12}
 Batygin, K.~A. 2012, Nature, 491, 418, \dodoi{10.1038/nature.11560}
 
+\bibitem[{{Beaug{\'e}} \& {Nesvorn{\'y}}(2012)}]{bea12}
+{Beaug{\'e}}, C., \& {Nesvorn{\'y}}, D. 2012, \apj, 751, 119,
+  \dodoi{10.1088/0004-637X/751/2/119}
+
 \bibitem[{{Beust}(2003)}]{beu03}
 {Beust}, H. 2003, \aap, 400, 1129, \dodoi{10.1051/0004-6361:20030065}
 
@@ -181,6 +185,13 @@ Levison, H.~F., Duncan, M.~J., Brasser, R., , \& Kaufmann, D.~E. 2010, Science
 {Moeckel}, N., \& {Bate}, M.~R. 2010, \mnras, 404, 721,
   \dodoi{10.1111/j.1365-2966.2010.16347.x}
 
+\bibitem[{{Nagasawa} {et~al.}(2008){Nagasawa}, {Ida}, \& {Bessho}}]{nag08}
+{Nagasawa}, M., {Ida}, S., \& {Bessho}, T. 2008, \apj, 678, 498,
+  \dodoi{10.1086/529369}
+
+\bibitem[{{Petrovich}(2015)}]{pet15b}
+{Petrovich}, C. 2015, \apj, 805, 75, \dodoi{10.1088/0004-637X/805/1/75}
+
 \bibitem[{Plummer(1911)}]{plu11}
 Plummer, H.~C. 1911, MNRAS, 71
 
@@ -212,6 +223,9 @@ Sadavoy, S.~I., \& Stahler, S.~W. 2017, Monthly Notices of the Royal
 
 \bibitem[{{Saha} \& {Tremaine}(1994)}]{sah94}
 ---. 1994, \aj, 108, 1962, \dodoi{10.1086/117210}
+
+\bibitem[{{Schlaufman}(2010)}]{sch10}
+{Schlaufman}, K.~C. 2010, \apj, 719, 602, \dodoi{10.1088/0004-637X/719/1/602}
 
 \bibitem[{{Tokovinin} \& {Kiyaeva}(2016)}]{tok16}
 {Tokovinin}, A., \& {Kiyaeva}, O. 2016, \mnras, 456, 2070,

@@ -1,4 +1,4 @@
-\documentclass[manuscript]{aastex631}
+\documentclass{aastex631}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb}
@@ -151,9 +151,9 @@ is defined relative to the center of mass of the planetary system, and the clust
 bodies be treated with different coordinate system, this version of \textit{Mercury} retains the advantages of a pure symplectic integrator while still being able 
 to evolve the unbound cluster stars. That is, there is not a build up of energy error, the Keplerian nature of the planetary system (while not undergoing a close approach)
 is retained, and simultaneously the cluster stars and their close approaches can be integrated efficiently in a leapfrog-like scheme. \\
-\indent These changes to \textit{Mercury} are crucial to realistic modeling of binary-planetsystems in a stellar cluster.
+\indent These changes to \textit{Mercury} are crucial to realistic modeling of binary-planet systems in a stellar cluster.
  In this work we are largely concerned with the overall fate of binary systems and their planets during interactions with the cluster. Moreover, our
-work has also revealed some intriguing changes in orbital architecture of planetary systems that have a close encounter with an excited binary companion.\\
+work has also revealed some intriguing changes in orbital architecture of planetary systems that have a close encounter with an excited binary companion.
 %\indent The inclusion of both the binary and the cluster environment in our simulations opens the door to exploring many existing question in planetary dynamics. One
 %such question that will be addressed in this work is the misalignment of the spin-orbit angle of gas giants with their host star. In particular, exoplanet observations
 %have indicated that hot jupiters have a stronger likelihood to be on an inclined orbit relative to the spin axis of the central star. Hot jupiters are thought to have
@@ -384,7 +384,9 @@ have a planetary instability occur. Characteristics of the systems themselves su
 as initial binary semi-major axis, total cluster mass, and integration time do not have an appreciable effect on the bulk number of 
 planetary disruptions. This scarcity of planetary destabilization and lack of dependence
 on cluster size is in agreement with previous work by \cite{dlfm99}, and indicates that free-floating
-planets that have been dynamically ejected from a host system should be relatively rare. 
+planets that have been dynamically ejected from a host system should be relatively rare. This indicates to us that future work
+should focus more on the initial conditions of the binary-planet system in establishing the parameter space for destabilization, rather
+than initial conditions of the cluster environment.
  In the case of the binary semi-major axis, this makes sense, as all of the systems are inherently stable in 
 isolation. Therefore we expect that it is dynamical evolution of the system, binary included, due to the cluster environment that 
 would produce an instability. This is what we see in the vast majority of cases: chaotics interactions with passing cluster stars 
@@ -424,19 +426,21 @@ During this migration, Jupiter and Saturn are pulled to $\approx 100^{\circ}$ in
     \label{fig:close_hist}
 \end{figure}
 We must also look to the fate of the binary companion. In general, the orbit of a surviving binary companion is not 
-closely tied to the orbits of the planets. This is shown in Fig.\ref{fig:ang_correlation}. While unstable systems have a preference 
+closely tied to the orbits of the planets. 
+%This is shown in Fig.\ref{fig:ang_correlation}. 
+While unstable systems have a preference 
 for a high inclination, this is not tied to the inclination of the binary companion. Additionally, we can look to whether or not the binary 
 becomes unbound during a simulation. Unstable systems have a nearly $50/50$ split as to whether or not the binary is lost. However, stable systems 
 more often than not retain their binary companion. In $93\%$ of systems that keep all 4 planets, the binary remains bound as well. Therefore,
 where systems can certainly become unstable with or without the binary staying bound, if a binary does become stripped by the cluster, it is more likely
 that 1 or more of the system's planets will also be lost. It is also worth observing that the binary is very likely to survive the cluster overall, so this
 architecture of s-type planets with a relatively close binary is quite dynamically stable in the presence of a fully embedded cluster.  
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\textwidth]{fig/coupling_scatter_ang_80m.png}
-    \caption{A plot of the angular separation of the angular momentum vector of the binary companion versus the inner planets}
-    \label{fig:ang_correlation}
-\end{figure}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.5\textwidth]{fig/coupling_scatter_ang_80m.png}
+%    \caption{A plot of the angular separation of the angular momentum vector of the binary companion versus the inner planets}
+%    \label{fig:ang_correlation}
+%\end{figure}
 \subsection{Orbital Architecture Changes}
 The main takeaway from this project is that the orbital architectures of surviving planets in unstable (lose at least one planet)
  versus stable (retain all four planets) have several noticeable, observable signposts. 
@@ -459,6 +463,10 @@ These distributions of the final eccentricity and inclination of the inner giant
 Interactions with the binary companion, whether it remains bound to the primary or not, destabilize the planets via an exchange of orbital 
 momentum. If the planets stay bound, this interaction can heat up their orbits to higher eccentricities and inclinations. Often the two
 inner planets will undergo a coupled evolution as if in a rigid disk (shown in work by \cite{ina97}), reaching similar inclinations after the instability. 
+Additionally, we note that unstable systems are more likely to reach planetary orbits that have \textit{both} high inclination and high eccentricity. This 
+sort of pairing of high $\lambda$ and high eccentricity has been seen with Rossiter-McLaughlin observations
+(\cite{sch10}) and points to two separate populations: misaligned and aligned with the 
+spin of the parent star.
 \subsection{Spin Orbit Misalignment \& the birth of Hot Jupiters}
 The accepted theory of planet formation is that planets form in a dusty, coplanar circumstellar disk (also called a protoplanetary
 disk). A subset of exoplanets that has challenged existing theories of giant planet formation in the field of planetary astrophysics is the 
@@ -472,19 +480,29 @@ the gas giants likely form farther out in the protoplanetary disk and somehow mi
 smooth migration due to angular momentum exchange with a viscous gaseous disk(\cite{gol80}). \cite{lin96} suggest 
 this mechanism for the orbit of famed hot Jupiter 51 Peg b, the first exoplanet discovered orbiting 
 a main sequence star \cite{may95}. Smooth disk migration for the case of a single planet is not likely to produce a very eccentric gas giant, as the gas 
-disk can dampen high eccentricities(\cite{duf15}).
-planet-planet scattering, or gravitational interactions with a stellar companion can also produce hot jupiters (more info will be added once papers are read!!!!!).
-The presence of \textit{inclined} hot jupiters(\cite{alb12}), with their misalignment relative to the Spin
-of their host star measure via the Rossiter-McLaughlin effect (\cite{ros24},) further complicates this picture, but also provides more evidence for the dynamical pathway of hot jupiter production. 
-These gas giants in all likelihood form in a coplanar dusty disk; during their migration, how are they being excited 
-to a high spin-orbit angle with respect to their host-star?\\ 
-One such suggestion is this inclination is the result of interactions between a gas giant and a distant binary companion. 
+disk can dampen high eccentricities(\cite{duf15}). 
+The presence of \textit{inclined} hot Jupiters(\cite{alb12}), with their misalignment relative to the Spin
+of their host star measure via the Rossiter-McLaughlin effect (\cite{ros24},) further complicates this picture, but also provides more evidence for the dynamical pathway 
+of hot jupiter production. 
+Other dynamical pathways to produce hot Jupiters include planet-planet scattering, or gravitational interactions with a stellar companion. These mechanisms
+have the added effect of forcing gas giants to high eccentricities and/or inclinations. They are of interest to this work due to the preponderance of 
+excited planetary orbits among our unstable simulations.\\
+%planet-planet
+\indent Dynamical instabilities caused by planet-planet scattering can lead to both high eccentricities and high inclinations (\cite{bea12},). Following these scattering events,
+the high eccentricities of the gas giants can be damped out by tidal effects (\cite{nag08}), shrinking the orbit and creating a hot Jupiter. \cite{bea12} utilized N-Body 
+simulations that include tidal forces. They triggered instabilities by breaking the planets out of an initial resonant configuration.
+ The simulations showed that planet-planet encounters and secular effects are the ruling modes of hot Jupiter formation, as opposed to a Kozai resonance. That is,
+ the dominant way the hot Jupiters are formed are planets are forced to a low pericenter, high eccentricity orbit by a scattering event, and then are circularized
+ by tidal effects. Secular planet-planet interactions can also create a high eccentricity gas giant orbit that can then be circularized. \cite{pet15b} show that this is an 
+ efficient process for hot Jupiter formation, but that it does not produce the observed high obliquity sample of misaligned hot Jupiters. \\ 
+%planet-binary
+\indent Finally, there can be interactions between a planet system and a binary companion.
 The binary can exert a torque on either the disk(\cite{bat12}) or a mature planet system (\cite{fab07},\cite{kai11},\cite{dro20}), creating an 
 orbital arrangements of a star's planets with high obliquities. Previous work (\cite{fab07})on this topic often points to Kozai-Lidov cycles as the driver of this evolution, 
 in which
-a sufficiently inclined binary cyclically exchanges angular momentum with a planet and causes it to evolve in eccentricity and inclination.
+a sufficiently inclined binary cyclically exchanges angular momentum with a planet and causes it to evolve in eccentricity and inclination. \\
 The presence of highly inclined gas giants in our 'unstable' systems
-points to a similar pathway to produce these misaligned exoplanets. Excitement of the binary companion from a stellar cluster
+points to a similar pathway to produce these high $\lambda$ exoplanets. Excitement of the binary companion from a stellar cluster
 can cause impulsive perturbations (as opposed to longer cyclic Kozai resonances) of planetary systems that result in bound planets with 
 high predicted spin-orbit angles.
 %To take an in-depth look at inclined, unstable systems, we first want to know if we can treat all 3 suites of simulations' 
