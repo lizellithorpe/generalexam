@@ -28,15 +28,15 @@
 
 \section{Background \& Motivation}
 \indent The dynamics of planetary systems serve as signposts of their formation and subsequent evolution. Thus the study of dynamical modeling 
-of exoplanets is a form of archaeology: using both observations and simulations of existing stable planets, we can walk back in 
+of exoplanets can be thought of as a form of archaeology: using both observations and simulations of existing stable planets, we can walk back in 
 time to discover which physical processes govern the behavior of extrasolar worlds.  Dynamics offers a strong union of computational 
 and observational astronomy, where an influx of exoplanet observational data has dovetailed nicely with a surge in advancements in numerical algorithms
 over the last two decades. \\
-\indent It has been long thought that most stars spend some of their early lives in a cluster environement, a large scale sphere of gas that acts as a stellar nursery
+\indent It has been long thought that most stars spend some of their early lives in a cluster environement, a large scale body of gas that acts as a stellar nursery
  that condense into pre-stellar cores in the gas and dust (\cite{lad03}). Recent work(\cite{sad17}) has also bolstered the theory(\cite{kro95}) that the majority of stars 
- are born in a stellar multiple, where their dense pre-stellar cores mutually bound together in a dusty envelope. 
+ are born in a stellar multiple, with their dense pre-stellar cores mutually bound together in a dusty envelope. 
  These multiple bound cores, likely formed
- via fragmentation (\cite{bon94},\cite{bat03},\cite{tur09}) either stay together in a binary as interactions with their gaseous
+ via fragmentation (\cite{bon94},\cite{bat03},\cite{tur09}), either stay together in a binary as interactions with their gaseous
  disk decrease the separation between the pair (\cite{bat00},\cite{bat03}), or are pulled apart by a cluster environment(\cite{kro01}). 
  %Dynamical interactions from a stellar cluster have also been shown to effect the orbital architecture of existing binaires. 
  While clusters can unbind so-called 'soft binaries'(\cite{kro01}), dynamical interactions with a cluster are not sufficient to explain the observed
@@ -66,13 +66,14 @@ the restricted 3-body problem with the Lie series method (Delva 1985) and establ
 for a planet based on the eccentricity of the binary system. \cite{dvo86} looked at various eccentricities of the binary companion, but in all cases the mass of the binary and 
 the central star were the same. 
  Holman \& Wiegert further built upon this stability analysis via symplectically integrating binary systems 
-with both p-type and s-type planets. Their integration work, based on the Wisdom-Holman method,
- produced an analytic form of a planet's critical orbit based on both the eccentricity of the binary and the mass
+with both p-type (where the planet orbits around a binary star pair) and s-type planets (where planets are bound to a single star with a binary companion exterior to their orbit).
+ Their integration work, based on the Wisdom-Holman method, produced an analytic form of a planet's critical orbit based on both the eccentricity of the binary and the mass
 ratio $\mu = \frac{M_{bin}}{M_{primary}}$. Also drawing on \cite{wis91} is the work described in \cite{ina97}, in which the solar system is integrated in the presence of a 
-binary. The authors exemplify the Kozai effect (\cite{koz62}) in which an inclined binary exchanges angular momentum with the planets, and also show that the planets evolve in concert 
-as a rigid disk. This work revealed that the Kozai effect is a pathway that can lead to increased eccentricity of planets. Another analysis of the Kozai effect on planetary stability that 
-takes a different, secular approach is \cite{fab07}, in which the authors integrate the motion of planets in the presence of a binary to show that tidal friction can circularize an 
-orbit made eccentric by an inclined binary companion.\\
+binary. The authors exemplify the Kozai effect (\cite{koz62}) in which an inclined binary exchanges angular momentum with the planets, and also show that the planets evolve 
+in concert as a rigid disk. This work revealed that the Kozai effect is a pathway that can lead to increased eccentricity of planets. 
+Another analysis of the Kozai effect on planetary stability that 
+takes a different, secular approach is \cite{fab07}, in which the authors integrate the motion of planets in the presence of a binary to show that tidal friction 
+can circularize an orbit made eccentric by an inclined binary companion.\\
 \indent The stability analysis of Holman \& Wiegert remains of interest to this day, with recent work such as \cite{lam18} further refining
 their original critical orbit with a neural network and integrations performed in the publically available REBOUND integrator.
  Analysis of planets in binaries continue with work 
@@ -91,9 +92,19 @@ and the subsequent evolution of these young stars into binaries. They find that 
  tight binaries are formed by the hardening of wider binaries via dynamical interactions. \cite{ada06} and \cite{pro09} used N-Body simulations of moderately sized stellar clusters
   (100-10,000 members) or embedded clusters to study the impact of a cluster environment on planet formation, particularly in how protoplanetary disks may be affected by stellar raditation.
   They find that disruption of model solar systems in an evolved cluster environment(\cite{ada06}) should be relatively rare due to the paucity of encounters between a 'solar system' 
-  in question and a passing star, but in younger, denser clusters the photoevaporation of disks by a cluster environment can be appreciable(\cite{pro09})
+  in question and a passing star, but in younger, denser clusters the photoevaporation of disks by a cluster environment can be appreciable(\cite{pro09})\\
+  \indent Also addressing the evolution of a stellar cluster is work by \cite{par09kozai} and \cite{par09binaries} in which N-Body simulations are used to analyze the prevalence of 
+  planets susceptible to the Kozai effect from a binary companion, and the stability of binaries in a dense cluster environment respectively. \cite{par09kozai} finds that 
+  around $10\%$ of all exoplanets should at one point in their lifes be in the presence of a binary companion that has been sufficiently inclined by its cluster environment
+  such that Kozai cycles can occur. They particularly focus on very dense clusters similar to Orion, with a half-mass radius of only $0.1$ pc. This is not typical for embedded
+  clusters, which have typical half mass radii of $\approx 0.8$(\cite{lad03}), and therefore would have less frequent interactions between cluster stars and a particular binary.
+  Nevertheless, they show that a dense cluster environment can significantly alter the architecture of a stellar binary which in turn can effect a protoplanetary disk or mature
+  planet system. \cite{par09binaries} focuses on similarly dense cluster environments, but instead explores the longeivity of moderately wide ($\approx 10^3 au$) 
+  to ultrawide ($> 10^4 au$) binaries. They find that cluster environments strip away all ultra-wide binary companions, and that the denser clusters, with half mass radii of 
+  $0.1 - 0.2 pc$ do not retain any binaries with separations $> 10^3 au$. The less dense clusters, with half mass radii $0.4 - 0.8 pc$, do retain some of these moderately
+  wide binaries. The authors note that as ultrawide binaries are often stripped in only a few cluster crossing times, these very separated binaries must form in isolation. \\
   
-  \cite{hao13} takes a monte carlo approach to simulating planetary systems in an
+  \indent \cite{hao13} takes a monte carlo approach to simulating planetary systems in an
  open cluster to explore planet-planet scattering. The authors model a stellar flyby and find that multi-planet systems are more sensitive to an open cluster 
  environment that single planet system. In the realm of exploring planetary orbits in clusters via a model stellar fly-by is work by \cite{mal11} and \cite{bre19}.
   \cite{mal11} shows that fly-bys increase the chance of planetary ejection, while \cite{bre19} shows that a cluster
@@ -123,7 +134,7 @@ a system with a hierarchical composition (i.e., the Keplerian motion of the plan
 can lead to an increase in efficiency for systems in which bodies have different orbital periods and therefore require different timescales. 
 \indent Some early applications of these MVS integrators include \textit{SyMBA} described in \cite{dun98} and the \textit{Mercury} 
 integrator by \cite{cha99}. SyMBA addresses the inability of symplectic integrations to change the value of timesteps via judicious splitting of the Hamiltonian,
-in which strong perturbative terms have comparatively smaller timesteps(\cite{dun98}). \cite{cha99} cites this choice as difficult to implement, and instead 
+in which strong perturbative terms have comparatively smaller timesteps(\cite{dun98}). \cite{cha99} cites this choice as cumbersome to implement, and instead 
 took a hybrid approach in the creation of \textit{Mercury}. \\
  \textit{Mercury} was a similar advancement to \textit{SyMBA} in the field of planetary dynamics in that it was a \cite{wis91} scheme that retained the advantages of a symplectic scheme 
 (i.e., no build up of error in energy except due to numerical round off) but allowed for close encounters between bodies. \textit{Mercury} and previous work by \cite{sah94}
@@ -176,9 +187,9 @@ This work is produced by a hybrid symplectic integrator that modifies the public
 in the presence of a bound binary companion that is in turn interacting with a large scale embedded stellar cluster.
 In this scheme, we define 3 distinct types of bodies: planets 
 bound to the primary, the binary companion, and cluster stars. The cluster star positions are treated with their inertial coordinates,
-measured only with respect to the origin. The binary's position
+measured only with respect to the cluster's center of mass. The binary's position
 is integrated with respect to the center of mass of the primary star system. 
-The planets are integrated purely with respect to the primary star.
+The planets are integrated in democratic heliocentric coordinates with respect to the primary star.
 The choice of these coordinates means that the cluster stars are integrated with a purely symplectic $T+V$ leapfrog scheme. This
 conserves energy and angular momentum, and is quite accurate as the timescale of cluster stars orbiting in the cluster
 is much larger than the characteristic timescale set by the orbits of the planetary bodies. The binary and the planets 
@@ -358,7 +369,7 @@ $0.5$ is added. The eccentricity was chosen to match observations of relatively 
 than 50au separation) binaries(\cite{tok16}), although the eccentricities of these systems are not well constrained. Future work will include
 analysis of other initial binary eccentricity choices, ensuring that the choices are stable in isolation.
 The binary takes on a range of semi-major axis values between $300$au and $800$au. We intially tested
-a range of $100$ to $1e4$au, but found that approximately closer than $300$ au and the planets are unstable, and outside $800$au 
+a range of $100$ to $1\times 10^4$au, but found that approximately closer than $300$ au and the planets are unstable, and outside $800$au 
 the binary is very quickly stripped away by the cluster and therefore no longer interacts meaningfully with the planets. 
  All of these systems in the final range of binary semi-major axis were verified via numerical integration to be inherently stable for $10 Myr$ when \textit{not} 
  in the presence of a stellar cluster. \\
@@ -381,7 +392,7 @@ The time step of our simulations is set to $100$ days, sufficiently small for th
 \subsection{Characteristics of Destabilization}
 First, we will take a holistic look at all simulations that undergo planet loss. In total, we see than $\approx 6\%$ of our simulations
 have a planetary instability occur. Characteristics of the systems themselves such 
-as initial binary semi-major axis, total cluster mass, and integration time do not have an appreciable effect on the bulk number of 
+as initial binary semi-major axis within our chosen range($300-800au$), total cluster mass, and integration time do not have an appreciable effect on the bulk number of 
 planetary disruptions. This scarcity of planetary destabilization and lack of dependence
 on cluster size is in agreement with previous work by \cite{dlfm99}, and indicates that free-floating
 planets that have been dynamically ejected from a host system should be relatively rare. This indicates to us that future work
@@ -403,7 +414,7 @@ lack of stellar encounters when the stars are unbound from the gas was seen in \
 Seemingly, the architecture of planet systems is 'frozen in' once the cluster becomes unbound. The pericenter approaches 
 that spell bad fortune for the stability of planets are driven by cluster star interactions. \\
 \indent We finally note that the unstable systems with the highest final inclination (greater than $20^{\circ}$) of the surviving planets
-all have greater than 10 instances of cluster members approaching within $1e4$au of the primary. An example system with an extremely inclined
+all have greater than 10 instances of separate cluster members approaching within $1\times 10^4$au of the primary. An example system with an extremely inclined
 inner gas giant pair and a binary companion that undergoes several perturbations is shown in Fig \ref{fig:stepbinary}. This example system retains its binary companion that
 migrates from an initial semi-major axis of $a=800$ to $a\approx 500$.
 During this migration, Jupiter and Saturn are pulled to $\approx 100^{\circ}$ inclination, while Uranus and Neptune are ejected from the system.
@@ -449,8 +460,8 @@ The main takeaway from this project is that the orbital architectures of survivi
   We choose to look at the 
  two inner gas giants as they are most likely to survive an instability event and thus act as good markers.
 These distributions of the final eccentricity and inclination of the inner giants are shown in Figure \ref{fig:160_ecc_inc}, 
- and a two-sample KS test with an extremely small p-value ($p_{KS} = 1.32e-38$ for the eccentricity distributions
- and $p_{KS} = 1.5e-26$ for the inclinations distributions) shows that we can reasonably infer that they are drawn from different parent distributions. 
+ and a two-sample KS test with an extremely small p-value ($p_{KS} = 1.32\times {10^38}$ for the eccentricity distributions
+ and $p_{KS} = 1.5\times ^{-26}$ for the inclinations distributions) shows that we can reasonably infer that they are drawn from different parent distributions. 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\textwidth]{fig/cumulative_ecc_inc_bigfont80.png}
