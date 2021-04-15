@@ -157,7 +157,7 @@ to allow for an additional massive body in the Hamiltonian. These coordinates al
 such that planets orbiting the primary can have different integration time steps.
 The numerical integrator we use for this work is built on the foundation of the original \textit{Mercury} package but with changes
 to allow the inclusion of multiple bound massive bodies (i.e., a binary or triplet star system) and unbound massive bodies (i.e. stars in a cluster environment)(\cite{kai17}).
-The integration of the planetary system around the primary. We still use the democratic heliocentric coordinates for the planetary system, but the binary
+We still use the democratic heliocentric coordinates for the planetary system, but the binary
 is defined relative to the center of mass of the planetary system, and the cluster stars are defined simply with their inertial coordinates. By letting the different
 bodies be treated with different coordinate system, this version of \textit{Mercury} retains the advantages of a pure symplectic integrator while still being able 
 to evolve the unbound cluster stars. That is, there is not a build up of energy error, the Keplerian nature of the planetary system (while not undergoing a close approach)
@@ -401,7 +401,9 @@ than initial conditions of the cluster environment.
  In the case of the binary semi-major axis, this makes sense, as all of the systems are inherently stable in 
 isolation. Therefore we expect that it is dynamical evolution of the system, binary included, due to the cluster environment that 
 would produce an instability. This is what we see in the vast majority of cases: chaotics interactions with passing cluster stars 
-drive the binary companion to a very eccentric orbit, allowing for close pericenter passages with the primary and its planets. 
+drive the binary companion to a very eccentric orbit, allowing for close pericenter passages with the primary and its planets. \cite{kaib13}
+found a similar result in an exploration of wider binaries with separations on the order of $10^3au$, wherein even distant binary companions
+can be perturbed to eccentric orbits with close pericenter approaches to an inner planet system. 
 These pericenter approaches destabilize at least one of the gas giants, and most often the Neptune and Uranus analogs are the planets 
 to be lost, leaving the inner giants behind. This is good news for the observational signals of these disruptions: in $77\%$ of cases, 
 at least one planet is left behind, meaning that we can make inferences about orbital changes due to these binary destabilization processes 
@@ -460,8 +462,9 @@ The main takeaway from this project is that the orbital architectures of survivi
   We choose to look at the 
  two inner gas giants as they are most likely to survive an instability event and thus act as good markers.
 These distributions of the final eccentricity and inclination of the inner giants are shown in Figure \ref{fig:160_ecc_inc}, 
- and a two-sample KS test with an extremely small p-value ($p_{KS} = 1.32\times {10^38}$ for the eccentricity distributions
- and $p_{KS} = 1.5\times ^{-26}$ for the inclinations distributions) shows that we can reasonably infer that they are drawn from different parent distributions. 
+ and a two-sample Kolmogorov-Smirnov test with an extremely small p-value ($p_{KS} = 1.32\times {10^38}$ for the eccentricity distributions
+ and $p_{KS} = 1.5\times ^{-26}$ for the inclinations distributions) shows that we can reasonably reject the null hypothesis that these two sets are drawn 
+ from the same parent distribution.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\textwidth]{fig/cumulative_ecc_inc_bigfont80.png}
