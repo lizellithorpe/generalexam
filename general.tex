@@ -387,8 +387,10 @@ The positions of the stars are sampled via weights assigned from a Plummer distr
 condense out of mass in a spherical Plummer potential. The mass of the Plummer sphere that acts as the gaseous environment for the
 embedded stars is chosen assuming a $10\%$ star formation efficiency. Then, the virial speeds of each star are calculated based on their position
 and we assign them a random initial velocity vector at $8\% v_{virial}$\cite{lev10}. Once the cluster is constructed, we generate $100$ simulations
-where for each simulation a random cluster star is assigned the role of the primary. As these simulations are run in democratic heliocentric
-coordinates, all other stars are redefined with respect to the rest frame of the primary. A set of 4 gas giants, analogous to the orbits and 
+where for each simulation a random cluster star is assigned the role of the primary, such that the starting position of the planetary/binary system
+within the cluster is randomized.
+%As these simulations are run in democratic heliocentric coordinates, all other stars are redefined with respect to the rest frame of the primary. 
+A set of 4 gas giants, analogous to the orbits and 
 masses of Jupiter, Saturn, Uranus, and Neptune, are set around the primary, and a coplanar binary companion with eccentricity of 
 $0.5$ is added. The eccentricity was chosen to match observations of relatively wide (greater
 than 50au separation) binaries(\cite{tok16}), although the eccentricities of these systems are not well constrained. Future work will include
@@ -415,7 +417,7 @@ The time step of our simulations is set to $100$ days, sufficiently small for th
 \section{The Fate of Binary Systems}
 
 \subsection{Characteristics of Destabilization}
-First, we will take a holistic look at all simulations that undergo planet loss. In total, we see than $\approx 6\%$ of our simulations
+First, we will take a holistic look at all simulations that undergo planet loss. In total, we see than $~ 6\%$ of our simulations
 have a planetary instability occur. Characteristics of the systems themselves such 
 as initial binary semi-major axis within our chosen range($300-800au$), total cluster mass, and integration time do not have an appreciable effect on the bulk number of 
 planetary disruptions. This scarcity of planetary destabilization and lack of dependence
@@ -467,7 +469,7 @@ We must also look to the fate of the binary companion. In general, the orbit of 
 closely tied to the orbits of the planets. 
 %This is shown in Fig.\ref{fig:ang_correlation}. 
 While unstable systems have a preference 
-for a high inclination, this is not tied to the inclination of the binary companion. Additionally, we can look to whether or not the binary 
+for a high inclination, this is not necessarily coupled with a high inclination of the binary companion. Additionally, we can look to whether or not the binary 
 becomes unbound during a simulation. Unstable systems have a nearly $50/50$ split as to whether or not the binary is lost. However, stable systems 
 more often than not retain their binary companion. In $93\%$ of systems that keep all 4 planets, the binary remains bound as well. Therefore,
 where systems can certainly become unstable with or without the binary staying bound, if a binary does become stripped by the cluster, it is more likely
@@ -520,8 +522,8 @@ smooth migration due to angular momentum exchange with a viscous gaseous disk(\c
 this mechanism for the orbit of famed hot Jupiter 51 Peg b, the first exoplanet discovered orbiting 
 a main sequence star \cite{may95}. Smooth disk migration for the case of a single planet is not likely to produce a very eccentric gas giant, as the gas 
 disk can dampen high eccentricities(\cite{duf15}). 
-The presence of \textit{inclined} hot Jupiters(\cite{alb12}), with their misalignment relative to the Spin
-of their host star measure via the Rossiter-McLaughlin effect (\cite{ros24},) further complicates this picture, but also provides more evidence for the dynamical pathway 
+The presence of \textit{inclined} hot Jupiters(\cite{alb12}), with their misalignment relative to the spin
+of their host star measure via the Rossiter-McLaughlin effect (\cite{ros24},) further complicates this picture, but also provides more evidence for a dynamical pathway 
 of hot jupiter production. 
 Other dynamical pathways to produce hot Jupiters include planet-planet scattering, or gravitational interactions with a stellar companion. These mechanisms
 have the added effect of forcing gas giants to high eccentricities and/or inclinations. They are of interest to this work due to the preponderance of 
@@ -530,17 +532,18 @@ excited planetary orbits among our unstable simulations.\\
 \indent Dynamical instabilities caused by planet-planet scattering can lead to both high eccentricities and high inclinations (\cite{bea12},). Following these scattering events,
 the high eccentricities of the gas giants can be damped out by tidal effects (\cite{nag08}), shrinking the orbit and creating a hot Jupiter. \cite{bea12} utilized N-Body 
 simulations that include tidal forces. They triggered instabilities by breaking the planets out of an initial resonant configuration.
- The simulations showed that planet-planet encounters and secular effects are the ruling modes of hot Jupiter formation, as opposed to a Kozai resonance. That is,
+ Their work argues that planet-planet encounters and secular effects are the ruling modes of hot Jupiter formation, as opposed to a Kozai resonance. That is,
  the dominant way the hot Jupiters are formed are planets are forced to a low pericenter, high eccentricity orbit by a scattering event, and then are circularized
  by tidal effects. Secular planet-planet interactions can also create a high eccentricity gas giant orbit that can then be circularized. \cite{pet15b} show that this is an 
- efficient process for hot Jupiter formation, but that it does not produce the observed high obliquity sample of misaligned hot Jupiters. \\ 
+ efficient process for hot Jupiter formation, but that it does not produce the observed high obliquity sample of misaligned hot Jupiters, as opposed to planet-planet
+ scattering that can produce misaligned hot Jupiters. \\ 
 %planet-binary
 \indent Finally, there can be interactions between a planet system and a binary companion.
 The binary can exert a torque on either the disk(\cite{bat12}) or a mature planet system (\cite{fab07},\cite{kai11},\cite{dro20}), creating an 
 orbital arrangements of a star's planets with high obliquities. Previous work (\cite{fab07})on this topic often points to Kozai-Lidov cycles as the driver of this evolution, 
 in which
 a sufficiently inclined binary cyclically exchanges angular momentum with a planet and causes it to evolve in eccentricity and inclination. \\
-The presence of highly inclined gas giants in our 'unstable' systems
+The presence of highly inclined gas giants in our unstable systems
 points to a similar pathway to produce these high $\lambda$ exoplanets. Excitement of the binary companion from a stellar cluster
 can cause impulsive perturbations (as opposed to longer cyclic Kozai resonances) of planetary systems that result in bound planets with 
 high predicted spin-orbit angles.
@@ -559,7 +562,8 @@ high predicted spin-orbit angles.
 %flatten our inclination distribution.
 \section{Conclusions and Future Work}
 Our initial work has shown that the presence
-of cluster stars can have the effect of destabilizing a significant fraction of binary systems by causing the binary companion to migrate closer to the orbiting gas giants.
+of cluster stars can have the effect of destabilizing a significant fraction of binary systems by perturbing the binary onto a close pericenter
+approach to the orbiting gas giants.
 In particular, we have found that these unstable systems have a significantly different orbital architecture than their stable counterparts. 
 %We can make a comparison between our highly inclined unstable systems and the observed population of misaligned hot jupiters. \\
 Future work with this integrator includes continuing this experiment with different initial planetary configurations and binary configurations to see how the cluster could
