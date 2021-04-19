@@ -210,7 +210,7 @@ conserves energy and angular momentum, and is quite accurate as the timescale of
 is much larger than the characteristic timescale set by the orbits of the planetary bodies. The binary and the planets 
 are also integrated symplectically, although with a mixed variable symplectic Wisdom-Holman scheme(\cite{wis91}). Finally, when close encounters do occur in the simulations,
 a change is made to integrate these directly with a Bulirsch-Stoer scheme with a much smaller time step than was used prior to the close
-encounter. Thus, this scheme largely preserves the useful angular momentum and energy conservation of a symplectic scheme while allowing
+encounter. Thus, this scheme largely preserves the angular momentum and energy conservation of a symplectic scheme while allowing
 for close encounters.
 Equation \ref{positions} shows how we define the position of each type of object, where $\vec{X}_A$ represents the position of the primary star,
 $\vec{X}_B$ the position of the binary, $X_{i}$ for $1\leq i \leq N_P$ is the position of a planet, and $\vec{X}_i$ for $N_P < i \leq N_P+N_S$ is the position of a cluster star.
@@ -225,15 +225,25 @@ The lowercase $\vec{x}$ represents each type of body's inertial coordinates rela
      \end{split}
 \label{positions}
 \end{equation}
-As such, we define some useful position vectors for changing between reference frames.
+As such, we define some useful position vectors for changing between reference frames. \\
 \begin{equation}
 \begin{split}
     \vec{s} = \frac{\sum_{i-1}^{N_P}m_i\vec{X}_i}{m_A+\sum_{i-1}^{N_P}m_i}\\
     \vec{\Delta} = \vec{X}_A-\frac{\sum_{i=1}^{N_P}m_i\vec{X}_i+m_B(\vec{X}_B)+\vec{s})}{m_A+m_B+\sum_{i=1}^{N_P}m_i}
 \end{split}
 \end{equation}
+The corresponding conjugate momenta for the bodies is as follows, again where the lowercase terms are for the inertial case and the uppercase terms
+are the momenta for the new coordinates:
 
-In this symplectic scheme, we must consider how Hamilton's equations evolve for all members of the system. We consider mutual gravitation
+\begin{equation}
+    \begin{split}
+        \vec{P}_A = \vec{p}_A+\vec{p}_B + \sum_{j=1}^{N_P}\vec{p}_j \\
+        \vec{P}_i = \vec{p}_i-m_i\frac{\vec{p}_A+\sum_{j=1}^{N_P}\vec{p}_j}{m_A+\sum_{j=1}^{N_P}m_j} \text{   for   } 1\leq i \leq N_P \\
+        \vec{P}_B = \vec{p}_B -m_B\frac{\vec{p}_A+\vec{p}_B+\sum_{j=1}^{N_P}\vec{p}_j}{m_A+m_B+\sum_{j=1}^{N_P}m_j} \\
+        \vec{P}_i = \vec{p}_i \text{   for   } N_P < i \leq N_P+N_S
+    \end{split}
+\end{equation}
+\indent In this symplectic scheme, we must consider how Hamilton's equations evolve for all members of the system. We consider mutual gravitation
 between the primary star, binary star, planets and cluster stars. We also consider the gravitational tide from the gas of the 
 Plummer potential(\cite{plu11}) that we assume to be binding the cluster stars together. I will include the derivation for the Plummer potential here.
 This force from the Plummer potential is dependent on the inertial position of each massive body within the cluster, which can make the 
