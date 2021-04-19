@@ -121,46 +121,61 @@ In particular, symplectic integration schemes have been popular as they have lar
 faster than other N-body algorithms(\cite{cha99},\cite{sah92}).
 This is due to the formulation of advancing the positions and momenta of bodies via Hamilton's equations, which preserve inherently 
 both energy and angular momentum. In using a
-symplectic scheme, the Keplerian nature of the orbits of small bodies about a large central mass can be 'built in' to the Hamiltonian, allowing for very fast integrations
-of situations like the solar system, where the planets are on Keplerian orbits and are not undergoing close encounters with another. 
+symplectic scheme, the hamiltonian can be split into Keplerian and non-Keplerian parts, where the Keplerian parts can be solved exactly,
+%the Keplerian nature of the orbits of small bodies about a large central mass can be 'built in' to the Hamiltonian, 
+allowing for very fast integrations. The non-keplerian motions of the bodies must be solved numerically, as well as additional perturbations that may occur 
+during a close encounter with another body.
+%of situations like the solar system, where the planets are on Keplerian orbits and are not undergoing close encounters with another. 
 Therein we run into our first problem with early symplectic schemes: to investigate the dynamics of celestial bodies, we need to allow for close approaches
 that could kick bodies off their Keplerian paths. An additional problem that must be considered is that, unlike traditional integration methods,
-the preservation of phase space in symplectic schemes is dependent on a permanent choice of time step (\cite{lee97conf}).
+the preservation of phase space in symplectic schemes is dependent on a permanent choice of time step (\cite{lee97conf}).\\
 %Additionally, pure symplectic integrators do not allow for adaptively sized time steps (\cite{lee97conf}), making
 %the choice of timescale for integrations  \\
 \indent \cite{wis91} is the seminal work in introducing a  scheme known as a \textit{mixed variable symplectic} (MSV) integrator. Such a scheme can quickly integrate
 a system with a hierarchical composition (i.e., the Keplerian motion of the planets is a much larger part of the Hamiltonian that perturbations from a distant star).
+In MVS schemes like \textit{Mercury} and other integrators (\cite{dun98},\cite{ric00}), the Hamiltonian that describes
+can be split and integrated separately(\cite{yos90},\cite{sah92}). It is split into a Keplerian portion, which for most of the 
+integration is the largest portion, and an interaction part that dominates when two bodies 
+approach one another. As the interaction part is normally small except when two bodies are close, the Keplerian part of the Hamiltonian is comparably large and can be solved
+analytically, greatly increasing the speed of the integrator.
 \cite{sah94} showed that the limitation of a fixed timestep could be partially overcome by assigning a different timestep to different bodies in an integration. This
-can lead to an increase in efficiency for systems in which bodies have different orbital periods and therefore require different timescales. 
-\indent Some early applications of these MVS integrators include \textit{SyMBA} described in \cite{dun98} and the \textit{Mercury} 
+can lead to an increase in efficiency for systems in which bodies have different orbital periods and therefore require different timescales. \\
+\indent Applications of these MVS integrators used in modern dynamical astronomy include \textit{SyMBA} described in \cite{dun98} and the \textit{Mercury} 
 integrator by \cite{cha99}. SyMBA addresses the inability of symplectic integrations to change the value of timesteps via judicious splitting of the Hamiltonian,
 in which strong perturbative terms have comparatively smaller timesteps(\cite{dun98}). \cite{cha99} cites this choice as cumbersome to implement, and instead 
 took a hybrid approach in the creation of \textit{Mercury}. \\
- \textit{Mercury} was a similar advancement to \textit{SyMBA} in the field of planetary dynamics in that it was a \cite{wis91} scheme that retained the advantages of a symplectic scheme 
-(i.e., no build up of error in energy except due to numerical round off) but allowed for close encounters between bodies. \textit{Mercury} and previous work by \cite{sah94}
-addressed the adaptive time step issue by allowing disparate bodies in the integration to have different time steps, as long as those assigned time steps 
-did not change during the course of the integration. This is useful for instance if a modeled planetary system
-has bodies with very different orbital periods.
-Still, the need for adaptive time steps can be seen in the case of a close approach between
-two bodies where the characteristic timescale of the encounter can be quite a bit smaller than the original time steps. 
+ \textit{Mercury}
+  %was a similar advancement to \textit{SyMBA} in the field of planetary dynamics in that it 
+  is a \cite{wis91} integrator that retains the advantages of a symplectic scheme 
+(i.e., no build up of error in energy except due to numerical round off) but allowed for close encounters between bodies. \textit{Mercury} utilizes a single timestep 
+for its integrations, in opposition to work like \cite{sah94} that uses a disparate timestep for each body and \textit{SyMBA} that uses adaptive timestepping. The 
+advantage that \textit{Mercury} gives due to its hybrid nature is the inclusion of an interaction term in the Keplerian portion of the 
+Hamiltonian that can be 'turned on' with an adjustable prefactor (that takes on values between 0 and 1) when massive bodies approach one another. As these interactions
+become dominant (i.e., when planets are near each other), the close-encounters are integrated with a Bulirsch-Stoer scheme, retaining the same time step and solving 
+for the motion of the bodies to machine precision.
+%While previous work by \cite{sah94}
+%addressed the adaptive time step issue by allowing disparate bodies in the integration to have different time steps, as long as those assigned time steps 
+%did not change during the course of the integration. This is useful for instance if a modeled planetary system
+%has bodies with very different orbital periods.
+%Still, the need for a non-symplectic integration can be seen in the case of a close approach between
+%two bodies where the characteristic timescale of the encounter can be quite a bit smaller than the original time steps. 
 %Instead of requiring symplectic schemes
 %with close approaches to have prohibitively small time steps, the idea of a hybrid symplectic integrator came about. 
-In \textit{Mercury} and other integrators (\cite{dun98},\cite{ric00}), the Hamiltonian that describes
-can be split and integrated separately(\cite{yos90},\cite{sah92}). In \textit{Mercury}, it is split into a Keplerian portion, which for most of the 
-integration is the largest portion, and an interaction part that dominates when two bodies 
-approach one another. As the interaction part is normally small except when two bodies are close, the Keplerian part of the Hamiltonian is comparably large and can be solved
-analytically, greatly increasing the speed of the integrator. \\
+ \\
 \indent A change came to the \textit{Mercury} code as authors(\cite{cha02}) then turned to the next problem: the inclusion of additional massive bodies, such as a 
 binary companion, that interact with the planetary system. \cite{cha02} marked the inclusion of a hierarchical coordinate system
 % \textit{democratic heliocentric} coordinate system(\cite{dun98}) 
-to allow for an additional massive body in the Hamiltonian. These coordinates allow for different time steps to be used for concentric shells around the primary star,
-such that planets orbiting the primary can have different integration time steps.
+to allow for an additional massive body in the Hamiltonian. This choice of coordinate system is advantageous over the use of Jacobi coordinates, also used in MVS schemes(see 
+\cite{beu03}),
+as Jacobi coordinates require plantary bodies to be ordered, making close encounters where planets may cross each other's orbits difficult to integrate. 
+%These coordinates allow for different time steps to be used for concentric shells around the primary star,
+%such that planets orbiting the primary can have different integration time steps.
 The numerical integrator we use for this work is built on the foundation of the original \textit{Mercury} package but with changes
 to allow the inclusion of multiple bound massive bodies (i.e., a binary or triplet star system) and unbound massive bodies (i.e. stars in a cluster environment)(\cite{kai17}).
 We still use the democratic heliocentric coordinates for the planetary system, but the binary
 is defined relative to the center of mass of the planetary system, and the cluster stars are defined simply with their inertial coordinates. By letting the different
 bodies be treated with different coordinate system, this version of \textit{Mercury} retains the advantages of a pure symplectic integrator while still being able 
-to evolve the unbound cluster stars. That is, there is not a build up of energy error, the Keplerian nature of the planetary system (while not undergoing a close approach)
+to evolve the unbound cluster stars. That is, there is not a build up of energy error, the pseudo-Keplerian nature of the planetary system 
 is retained, and simultaneously the cluster stars and their close approaches can be integrated efficiently in a leapfrog-like scheme. \\
 \indent These changes to \textit{Mercury} are crucial to realistic modeling of binary-planet systems in a stellar cluster.
  In this work we are largely concerned with the overall fate of binary systems and their planets during interactions with the cluster. Moreover, our

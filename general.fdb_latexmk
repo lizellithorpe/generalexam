@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex general"] 1618517645 "general.aux" "general.bbl" "general" 1618517647
+["bibtex general"] 1618861213 "general.aux" "general.bbl" "general" 1618861216
   "aasjournal.bst.bst" 0 -1 0 ""
   "bibliography.bib" 1618504099 52357 ea8163a48af4f63ce337b607c49f9153 ""
-  "general.aux" 1618517646 9401 2ef10f3bba39a96f26b0c2f6817834f1 "pdflatex"
+  "general.aux" 1618861215 9418 5dcbb70f521ab2bc638b866002ead531 "pdflatex"
   (generated)
-  "general.blg"
   "general.bbl"
-["pdflatex"] 1618517645 "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf" "general" 1618517647
-  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.aux" 1618517646 9401 2ef10f3bba39a96f26b0c2f6817834f1 ""
-  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" 1618517643 53459 3fc33de3a95fc58effe7ab70f8102fce ""
+  "general.blg"
+["pdflatex"] 1618861214 "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf" "general" 1618861216
+  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.aux" 1618861215 9418 5dcbb70f521ab2bc638b866002ead531 ""
+  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" 1618861211 54762 edca509c9ca331b8259706e8362779e7 ""
   "/Users/lizellithorpe/Library/texmf/tex/latex/aastex631/aastex631.cls" 1614347201 239479 b28688f0c3df5a7b8dca3f903804b0ef ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
@@ -133,14 +133,14 @@
   "fig/hist_num_total_stars_bins.png" 1618426637 20889 4db8022009992b6297b576eb9ccc7796 ""
   "fig/lost_planets_mass341_51_5.png" 1616784818 268402 29f2a97176f096bb81e5583e97b55289 ""
   "fig/scatterplot_num_total_stars_nearby_spinorb.png" 1616608548 37430 a880ad94b30436dd6ccc01e326456534 ""
-  "general.aux" 1618517646 9401 2ef10f3bba39a96f26b0c2f6817834f1 "pdflatex"
-  "general.bbl" 1618517645 10822 303a68eb77404b418bac7e2844241543 "bibtex general"
-  "general.out" 1618517646 978 aaf3ed1baaacadfc10138ff4a2315503 "pdflatex"
-  "general.tex" 1618517643 53459 3fc33de3a95fc58effe7ab70f8102fce ""
+  "general.aux" 1618861215 9418 5dcbb70f521ab2bc638b866002ead531 "pdflatex"
+  "general.bbl" 1618861214 10822 303a68eb77404b418bac7e2844241543 "bibtex general"
+  "general.out" 1618861215 978 aaf3ed1baaacadfc10138ff4a2315503 "pdflatex"
+  "general.tex" 1618861211 54762 edca509c9ca331b8259706e8362779e7 ""
   (generated)
-  "general.log"
+  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf"
   "general.pdf"
+  "general.out"
+  "general.log"
   "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.log"
   "general.aux"
-  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf"
-  "general.out"
