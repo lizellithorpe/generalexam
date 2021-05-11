@@ -131,7 +131,7 @@ that could kick bodies off their Keplerian paths. An additional problem that mus
 the preservation of phase space in symplectic schemes is dependent on a permanent choice of time step (\cite{lee97conf}).\\
 %Additionally, pure symplectic integrators do not allow for adaptively sized time steps (\cite{lee97conf}), making
 %the choice of timescale for integrations  \\
-\indent \cite{wis91} is the seminal work in introducing a  scheme known as a \textit{mixed variable symplectic} (MSV) integrator. Such a scheme can quickly integrate
+\indent \cite{wis91} is the seminal work in introducing a  scheme known as a \textit{mixed variable symplectic} (MVS) integrator. Such a scheme can quickly integrate
 a system with a hierarchical composition (i.e., the Keplerian motion of the planets is a much larger part of the Hamiltonian that perturbations from a distant star).
 In MVS schemes like \textit{Mercury} and other integrators (\cite{dun98},\cite{ric00}), the Hamiltonian that describes
 can be split and integrated separately(\cite{yos90},\cite{sah92}). It is split into a Keplerian portion, which for most of the 
@@ -197,7 +197,7 @@ work has also revealed some intriguing changes in orbital architecture of planet
 %the Rossiter-McLaughlin effect\cite{hod21} indicates
 %a dynamical history that must be understood to have a full picture of exoplanet formation.
 \section{Methods}
-\subsection{Numerical Intergration}
+\subsection{Simulation Coordinates}
 This work is produced by a hybrid symplectic integrator that modifies the public version of \textit{Mercury} such that we can simultaneously evolve a system of planets
 in the presence of a bound binary companion that is in turn interacting with a large scale embedded stellar cluster.
 In this scheme, we define 3 distinct types of bodies: planets 
@@ -403,7 +403,7 @@ the binary is very quickly stripped away by the cluster and therefore no longer 
 \indent To design the parameters of the stellar cluster, we look to the catalog compiled by Lada \& Lada (2003)\cite{lad03}. The majority of clusters in the catalog have a mass less than
 $200M_{\odot}$ and a number of stars less than $250$. To model these most common clusters, we created two suites of simulations, one with a total mass of $80M_{\odot}$ and one
 with a mass of $160 M_{\odot}$. The smaller $80M_{\odot}$ cluster had $122$ stars and the larger $160 M_{\odot}$ has $221$. For good measure, we created a third larger cluster
-that mimics the observed characteristics of the embedded Monoceros R2 cluster, with a mass of $341 M_{\odot}$ and $509$ stellar cluster members(\cite{car97}). \\
+that mimics the observed characteristics of the embedded Monoceros R2 cluster, with a mass of $341 M_{\odot}$ and $509$ stellar cluster members(\cite{car97}). 
 The time step of our simulations is set to $100$ days, sufficiently small for the orbital periods of the gas giants. 
 %The simulations were run on the OU supercomputing cluster \textit{Schooner}.
 %\section{Stellar Clusters and the Birth Environment of Planets}
@@ -425,14 +425,16 @@ on cluster size is in agreement with previous work by \cite{dlfm99}, and indicat
 planets that have been dynamically ejected from a host system should be relatively rare. This indicates to us that future work
 should focus more on the initial conditions of the binary-planet system in establishing the parameter space for destabilization, rather
 than initial conditions of the cluster environment.
- In the case of the binary semi-major axis, this makes sense, as all of the systems are inherently stable in 
-isolation. Therefore we expect that it is dynamical evolution of the system, binary included, due to the cluster environment that 
+The frequency of destabilizations do not depend on initial binary semi-major axis, which 
+is to be expected as all of the systems are inherently stable in 
+isolation(i.e., one choice of binary separation is not inherently 'more unstable' than another). 
+Therefore we expect that it is dynamical evolution of the system, binary included, due to the cluster environment that 
 would produce an instability. This is what we see in the vast majority of cases: chaotics interactions with passing cluster stars 
 drive the binary companion to a very eccentric orbit, allowing for close pericenter passages with the primary and its planets. \cite{kaib13}
 found a similar result in an exploration of wider binaries with separations on the order of $10^3au$, wherein even distant binary companions
 can be perturbed to eccentric orbits with close pericenter approaches to an inner planet system. 
-These pericenter approaches destabilize at least one of the gas giants, and most often the Neptune and Uranus analogs are the planets 
-to be lost, leaving the inner giants behind. This is good news for the observational signals of these disruptions: in $77\%$ of cases, 
+These pericenter approaches destabilize at least one of the gas giants, and most often the Neptune and Uranus analogs ejected planets,
+ leaving the inner giants behind. This is good news for the observational signals of these disruptions: in $77\%$ of cases, 
 at least one planet is left behind in unstable systems, meaning that we can make inferences about orbital changes due to these binary destabilization processes 
 in surviving exoplanets. The frequency of close stellar encounters seems to be the ruling factor in whether a system is destabilized,
 where the unstable systems have a clear preference for multiple interactions with cluster stars. This is shown in the histogram in Fig.\ref{fig:close_hist}
@@ -449,9 +451,9 @@ migrates from an initial semi-major axis of $a=800$ to $a\approx 500$.
 During this migration, Jupiter and Saturn are pulled to $\approx 100^{\circ}$ inclination, while Uranus and Neptune are ejected from the system.
 
 \begin{figure}
-    \plotone{fig/lost_planets_mass341_51_5.png}
+    \plotone{fig/lost_planets_suite17_sim_51.png}
     \caption{The orbital evolution of the 4 giant planets and binary companion. The left panels are the distance of the object from the primary,
-    where the solid line is the semi-major axis and the dashed line is the pericenter of the body. This particular system results in a very high
+    where the solid line is the semi-major axis and the dashed lines are the pericenter/apocenter of the body. This particular system results in a very high
     predicted spin-orbital angle for the jupiter and saturn mass bodies. Note the multiple 'jumps' as the binary companion 
     enters a close pericenter approach. These jumps are from encounters with cluster stars in which angular momentum is exchanged. In this
     simulation both the Uranus and Neptune mass planets become unbound and the binary companion remains bound.}
@@ -461,8 +463,9 @@ During this migration, Jupiter and Saturn are pulled to $\approx 100^{\circ}$ in
 \begin{figure}
     %\includegraphics[width=0.5\textwidth]{fig/hist_num_total_stars.png}
     \plottwo{fig/hist_num_total_stars_bins.png}{fig/scatterplot_num_total_stars_nearby_spinorb.png}
-    \caption{A normalized histogram containing results from all 3 suites of simulation depicting the distribution of 
-    number of 'close' (within 10k au) encounters the planetary system has with cluster stars.}
+    \caption{\textit{Left: }A normalized histogram containing results from all 3 suites of simulation depicting the distribution of 
+    number of 'close' (within 10k au) encounters the planetary system has with cluster stars. \textit{Right: }A scatterplot of the inner planet inclination
+    versus the number of stellar encounters.}
     \label{fig:close_hist}
 \end{figure}
 We must also look to the fate of the binary companion. In general, the orbit of a surviving binary companion is not 
@@ -470,14 +473,15 @@ closely tied to the orbits of the planets.
 %This is shown in Fig.\ref{fig:ang_correlation}. 
 While unstable systems have a preference 
 for a high inclination, this is not necessarily coupled with a high inclination of the binary companion. Additionally, we can look to whether or not the binary 
-becomes unbound during a simulation. For all $1800$ simulations, there are $179$ occurences of the loss of a binary companion. Stable systems 
-more often than not retain their binary companion. In $93\%$ of systems that keep all 4 planets, the binary remains bound as well. In $100$ of the $179$ cases,
+becomes unbound during a simulation.The vast majority of stable systems 
+retain their binary companion. In $93\%$ of systems that keep all 4 planets, the binary remains bound as well.  
+Out of all $1800$ simulations, there are only $179$ occurences of the loss of a binary companion, and in $100$ of these $179$ cases,
 the binary is stripped by the cluster with no effect on the stability of the 4 giants. 
 For unstable systems, $44\%$ retained their binary companion after planet loss, and $55\%$ lost their binary companion. This presents an intriguing
 case that for the plurality of unstable systems, the binary that perturbed the planets has been lost to the cluster. It would therefore not be 
 immediately observationally clear that a once-bound binary was the driver of past planetary dynamics. Additionally, if a system \textit{has} undergone
 a perturbation that strips it of a binary companion, it is far more likely to additionally lose 1 or more planets. That is, only $6\%$ of our total 
-simulations have unstable planets, but $44\%$ of the subset simulations with a lost binary have undergone planet loss.
+simulations have unstable planets, but $44\%$ ($79$ out of the $179$ cases) of the subset of simulations with a lost binary have undergone planet loss.
 
 
 %where systems can certainly become unstable with or without the binary staying bound, if a binary does become stripped by the cluster, it is more likely
