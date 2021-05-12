@@ -87,6 +87,9 @@ Chabrier, G. 2003, Publications of the Astronomical Society of the Pacific,
 De~Rosa, R.~J., Dawson, R., \& Nielsen, E.~L. 2020, Astronomy \& Astrophysics,
   640, A73, \dodoi{10.1051/0004-6361/202038496}
 
+\bibitem[{{Delva}(1985)}]{del85}
+{Delva}, M. 1985, \aaps, 60, 277
+
 \bibitem[{{Duffell} \& {Chiang}(2015)}]{duf15}
 {Duffell}, P.~C., \& {Chiang}, E. 2015, \apj, 812, 94,
   \dodoi{10.1088/0004-637X/812/2/94}
@@ -100,6 +103,9 @@ De~Rosa, R.~J., Dawson, R., \& Nielsen, E.~L. 2020, Astronomy \& Astrophysics,
 
 \bibitem[{{Fabrycky} \& {Tremaine}(2007)}]{fab07}
 {Fabrycky}, D., \& {Tremaine}, S. 2007, \apj, 669, 1298, \dodoi{10.1086/521702}
+
+\bibitem[{{Ford} \& {Rasio}(2008)}]{for08}
+{Ford}, E.~B., \& {Rasio}, F.~A. 2008, \apj, 686, 621, \dodoi{10.1086/590926}
 
 \bibitem[{{Goldreich} \& {Tremaine}(1980)}]{gol80}
 {Goldreich}, P., \& {Tremaine}, S. 1980, \apj, 241, 425, \dodoi{10.1086/158356}
@@ -258,6 +264,13 @@ Weidner, C., \& Kroupa, P. 2004, Monthly Notices of the Royal Astronomical
 
 \bibitem[{{Wisdom} \& {Holman}(1991)}]{wis91}
 {Wisdom}, J., \& {Holman}, M. 1991, \aj, 102, 1528, \dodoi{10.1086/115978}
+
+\bibitem[{{Wu} \& {Murray}(2003)}]{wu03}
+{Wu}, Y., \& {Murray}, N. 2003, \apj, 589, 605, \dodoi{10.1086/374598}
+
+\bibitem[{{Wu} {et~al.}(2007){Wu}, {Murray}, \& {Ramsahai}}]{wu07}
+{Wu}, Y., {Murray}, N.~W., \& {Ramsahai}, J.~M. 2007, \apj, 670, 820,
+  \dodoi{10.1086/521996}
 
 \bibitem[{{Yoshida}(1990)}]{yos90}
 {Yoshida}, H. 1990, Physics Letters A, 150, 262,
