@@ -95,7 +95,7 @@ and the subsequent evolution of these young stars into binaries. They find that 
   in question and a passing star, but in younger, denser clusters the photoevaporation of disks by a cluster environment can be appreciable \citep{pro09}\\
   \indent Also addressing the evolution of a stellar cluster is work by \cite{par09kozai} and \cite{par09binaries} in which N-Body simulations are used to analyze the prevalence of 
   planets susceptible to the Kozai effect from a binary companion, and the stability of binaries in a dense cluster environment respectively. \cite{par09kozai} finds that 
-  around $10\%$ of all exoplanets should at one point in their lifes be in the presence of a binary companion that has been sufficiently inclined by its cluster environment
+  around $10\%$ of all exoplanets should at one point in their lives be in the presence of a binary companion that has been sufficiently inclined by its cluster environment
   such that Kozai cycles can occur. They particularly focus on very dense clusters similar to Orion, with a half-mass radius of only $0.1$ pc. This is not typical for embedded
   clusters, which have typical half mass radii of $\approx 0.8 pc$\cite{lad03}, and therefore would have less frequent interactions between cluster stars and a particular binary.
   Nevertheless, they show that a dense cluster environment can significantly alter the architecture of a stellar binary which in turn can effect a protoplanetary disk or mature
@@ -118,8 +118,8 @@ To achieve such a broad assortment of work on the dynamics of stars and planets,
 of their experiments.
 In particular, symplectic integration schemes have been popular as they have largely reduced error in energy over time and are 
 faster than other N-body algorithms \citep{cha99,sah92}.
-This is due to the formulation of advancing the positions and momenta of bodies via Hamilton's equations, which preserve inherently 
-both energy and angular momentum. In using a
+This is due to the formulation of advancing the positions and momenta of bodies via Hamilton's equations, which place a bound on the energy
+in the system, rather than allowing energy error to grow with subsequent timesteps. In using a
 symplectic scheme, the hamiltonian can be split into Keplerian and non-Keplerian parts, where the Keplerian parts can be solved exactly,
 %the Keplerian nature of the orbits of small bodies about a large central mass can be 'built in' to the Hamiltonian, 
 allowing for very fast integrations. The non-keplerian motions of the bodies must be solved numerically, as well as additional perturbations that may occur 
@@ -143,7 +143,7 @@ can lead to an increase in efficiency for systems in which bodies have different
 integrator by \cite{cha99}. SyMBA addresses the inability of symplectic integrations to change the value of timesteps via judicious splitting of the Hamiltonian,
 in which strong perturbative terms have comparatively smaller timesteps \citep{dun98}. \cite{cha99} cites this choice as cumbersome to implement, and instead 
 took a hybrid approach in the creation of \textit{Mercury}. \\
- \textit{Mercury}
+\indent \textit{Mercury}
   %was a similar advancement to \textit{SyMBA} in the field of planetary dynamics in that it 
   is a \cite{wis91} integrator that retains the advantages of a symplectic scheme 
 (i.e., no build up of error in energy except due to numerical round off) but allowed for close encounters between bodies. \textit{Mercury} utilizes a single timestep 
