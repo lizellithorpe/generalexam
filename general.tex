@@ -161,8 +161,8 @@ for the motion of the bodies to machine precision.
 %Instead of requiring symplectic schemes
 %with close approaches to have prohibitively small time steps, the idea of a hybrid symplectic integrator came about. 
  \\
-\indent A change came to the \textit{Mercury} code as authors \citep{cha02} then turned to the next problem: the inclusion of additional massive bodies, such as a 
-binary companion, that interact with the planetary system. \cite{cha02} marked the inclusion of a hierarchical coordinate system
+\indent A change came to the \textit{Mercury} code as authors \citep{cha02} then turned to the next problem: the inclusion of additional stellar-mass bodies, such as a 
+binary companion, that interact with the planetary system. \cite{cha02} explains the inclusion of a hierarchical coordinate system
 % \textit{democratic heliocentric} coordinate system(\cite{dun98}) 
 to allow for an additional massive body in the Hamiltonian. This choice of coordinate system is advantageous over the use of Jacobi coordinates, also used in MVS schemes(see 
 \cite{beu03}),
@@ -170,7 +170,8 @@ as Jacobi coordinates require plantary bodies to be ordered, making close encoun
 %These coordinates allow for different time steps to be used for concentric shells around the primary star,
 %such that planets orbiting the primary can have different integration time steps.
 The numerical integrator we use for this work is built on the foundation of the original \textit{Mercury} package but with changes
-to allow the inclusion of multiple bound massive bodies (i.e., a binary or triplet star system) and unbound massive bodies (i.e. stars in a cluster environment)\citep{kai17}.
+to allow the inclusion of multiple bound massive bodies (i.e., a binary or triplet star system) and unbound massive bodies (i.e. stars in a cluster environment). The details 
+of the changes to the integrator are explained in \citet{kai17}.
 We still use the democratic heliocentric coordinates for the planetary system, but the binary
 is defined relative to the center of mass of the planetary system, and the cluster stars are defined simply with their inertial coordinates. By letting the different
 bodies be treated with different coordinate system, this version of \textit{Mercury} retains the advantages of a pure symplectic integrator while still being able 
@@ -207,9 +208,23 @@ The planets are integrated in democratic heliocentric coordinates with respect t
 The choice of these coordinates means that the cluster stars are integrated with a purely symplectic $T+V$ leapfrog scheme. This
 conserves energy and angular momentum, and is quite accurate as the timescale of cluster stars orbiting in the cluster
 is much larger than the characteristic timescale set by the orbits of the planetary bodies. The binary and the planets 
-are also integrated symplectically, although with a mixed variable symplectic Wisdom-Holman scheme \citep{wis91}. Finally, when close encounters do occur in the simulations,
-a change is made to integrate these directly with a Bulirsch-Stoer scheme with a much smaller time step than was used prior to the close
-encounter. Thus, this scheme largely preserves the angular momentum and energy conservation of a symplectic scheme while allowing
+are also integrated symplectically, although with a mixed variable symplectic Wisdom-Holman scheme \citep{wis91}. Finally, when interacting bodies
+near each other and as such
+non-Keplerian terms in the Hamiltonian become
+comparatively large, the bodies are integrated directly with a Bulirsch-Stoer scheme. For the planets, this occurs when passing 
+within a hill radii of one another. For cluster stars with much larger hill radii, the changeover to a direct integration
+occurs when the time-scale of the close encounter is less than $500\times$ the simulation time-step of $100$ days.
+%The importance of these terms is determined by a changeover factor $K(r_{ij})$, 
+%evaluated based on the separation between two bodies $i$ and $j$, in the Hamiltonian. 
+%The Hamiltonian splitting in \citet{cha99}, in inertial coordinates, uses such a changeover function (Eqn. \ref{ham}).
+%\begin{equation}
+%\begin{split}
+    %H_A = \sum_{i=1}^N\left(\frac{p_i^2}{2m_i}-\frac{Gm_{sun}m_i}{r_{sun}} \right) - G \sum_{i=1}^N\sum_{j=1}^N\frac{m_im_j}{r_ij}(1-K(r_{ij})) \\
+    %H_B = -G\sum_{i=1}^N\sum_{j=i+1}^N\frac{m_im_j}{r_ij}K(r_{ij})
+%\end{split} 
+%\label{ham}
+%\end{equation}
+Thus, this scheme largely preserves the angular momentum and energy conservation of a symplectic scheme while allowing
 for close encounters.
 Equation \ref{positions} shows how we define the position of each type of object, where $\vec{X}_A$ represents the position of the primary star,
 $\vec{X}_B$ the position of the binary, $X_{i}$ for $1\leq i \leq N_P$ is the position of a planet, and $\vec{X}_i$ for $N_P < i \leq N_P+N_S$ is the position of a cluster star.
@@ -247,7 +262,8 @@ between the primary star, binary star, planets and cluster stars. We also consid
 Plummer potential \citep{plu11} that we assume to be binding the cluster stars together. I will include the derivation for the Plummer potential here.
 This force from the Plummer potential is dependent on the inertial position of each massive body within the cluster, which can make the 
 calculation in our chosen coordinates fairly complicated. The expression for the force from the sphere of gas is different for each type of body,
-namely the planets, the binary, and the cluster star. We begin with the expression for the mass distribution of a Plummer sphere in inertial coordinates. 
+namely the planets, the binary, and the cluster star. We begin with the expression for the mass distribution of a Plummer sphere in inertial coordinates, where
+$\vec{x}$ is defined relative to the clusters's center-of-mass. 
 \begin{equation}
 \rho (\vec{x}) = \frac{3M_0}{4\pi a_0}+\biggl(1+\frac{|\vec{x}|^2}{a_0^2} \biggr)^{-5/2}
 \end{equation}

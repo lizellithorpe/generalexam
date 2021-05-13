@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  13 MAY 2021 09:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  13 MAY 2021 11:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -554,7 +554,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--111
  []
 
 [2] [3] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 309--311
+Underfull \hbox (badness 10000) in paragraph at lines 325--327
 
  []
 
@@ -562,56 +562,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 309--311
 <fig/lost_planets_suite17_sim_51.png, id=368, 1156.32pt x 1156.32pt>
 File: fig/lost_planets_suite17_sim_51.png Graphic file (type png)
 <use fig/lost_planets_suite17_sim_51.png>
-Package pdftex.def Info: fig/lost_planets_suite17_sim_51.png  used on input line 453.
+Package pdftex.def Info: fig/lost_planets_suite17_sim_51.png  used on input line 469.
 (pdftex.def)             Requested size: 436.15294pt x 436.14203pt.
 <fig/hist_num_total_stars_bins.png, id=370, 867.24pt x 578.16pt>
 File: fig/hist_num_total_stars_bins.png Graphic file (type png)
 <use fig/hist_num_total_stars_bins.png>
-Package pdftex.def Info: fig/hist_num_total_stars_bins.png  used on input line 464.
+Package pdftex.def Info: fig/hist_num_total_stars_bins.png  used on input line 480.
 (pdftex.def)             Requested size: 218.07646pt x 145.37773pt.
 <fig/scatterplot_num_total_stars_nearby_spinorb.png, id=371, 462.528pt x 346.896pt>
 File: fig/scatterplot_num_total_stars_nearby_spinorb.png Graphic file (type png)
 <use fig/scatterplot_num_total_stars_nearby_spinorb.png>
-Package pdftex.def Info: fig/scatterplot_num_total_stars_nearby_spinorb.png  used on input line 464.
+Package pdftex.def Info: fig/scatterplot_num_total_stars_nearby_spinorb.png  used on input line 480.
 (pdftex.def)             Requested size: 218.07646pt x 163.55986pt.
  [9 </Users/lizellithorpe/Desktop/grad_school/general_exam/fig/lost_planets_suite17_sim_51.png>]
 <fig/cumulative_ecc_inc_bigfont80.png, id=384, 867.24pt x 867.24pt>
 File: fig/cumulative_ecc_inc_bigfont80.png Graphic file (type png)
 <use fig/cumulative_ecc_inc_bigfont80.png>
-Package pdftex.def Info: fig/cumulative_ecc_inc_bigfont80.png  used on input line 509.
+Package pdftex.def Info: fig/cumulative_ecc_inc_bigfont80.png  used on input line 525.
 (pdftex.def)             Requested size: 256.55872pt x 256.5614pt.
 <fig/cumulative_ecc_inc_bigfont160.png, id=385, 867.24pt x 867.24pt>
 File: fig/cumulative_ecc_inc_bigfont160.png Graphic file (type png)
 <use fig/cumulative_ecc_inc_bigfont160.png>
-Package pdftex.def Info: fig/cumulative_ecc_inc_bigfont160.png  used on input line 511.
+Package pdftex.def Info: fig/cumulative_ecc_inc_bigfont160.png  used on input line 527.
 (pdftex.def)             Requested size: 218.07646pt x 218.0666pt.
 <fig/cumulative_ecc_inc_bigfont341.png, id=386, 867.24pt x 867.24pt>
 File: fig/cumulative_ecc_inc_bigfont341.png Graphic file (type png)
 <use fig/cumulative_ecc_inc_bigfont341.png>
-Package pdftex.def Info: fig/cumulative_ecc_inc_bigfont341.png  used on input line 511.
+Package pdftex.def Info: fig/cumulative_ecc_inc_bigfont341.png  used on input line 527.
 (pdftex.def)             Requested size: 218.07646pt x 218.0666pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [10 </Users/lizellithorpe/Desktop/grad_school/general_exam/fig/hist_num_total_stars_bins.png> </Users/lizellithorpe/Desktop/grad_school/general_exam/fig/scatterplot_num_total_stars_nearby_spinorb.png>] [11 </Users/lizellithorpe/Desktop/grad_school/general_exam/fig/cumulative_ecc_inc_bigfont80.png> </Users/lizellithorpe/Desktop/grad_school/general_exam/fig/cumulative_ecc_inc_bigfont160.png> </Users/lizellithorpe/Desktop/grad_school/general_exam/fig/cumulative_ecc_inc_bigfont341.png>] (/Users/lizellithorpe/Desktop/grad_school/general_exam/general.bbl [12] [13]) [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 596.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 612.
  (/Users/lizellithorpe/Desktop/grad_school/general_exam/general.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 596.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 596.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 612.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 612.
 Package rerunfilecheck Info: File `general.out' has not changed.
 (rerunfilecheck)             Checksum: D1F887714F6943EEEE9EED3D75C5B51B;978.
  ) 
 Here is how much of TeX's memory you used:
  10330 strings out of 480608
  146241 string characters out of 5903631
- 484019 words of memory out of 5000000
+ 484027 words of memory out of 5000000
  25910 multiletter control sequences out of 15000+600000
  542130 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,19n,41p,297b,570s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,19n,41p,297b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on /Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf (14 pages, 598926 bytes).
+Output written on /Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf (14 pages, 599163 bytes).
 PDF statistics:
  657 PDF objects out of 1000 (max. 8388607)
  602 compressed objects within 7 object streams
