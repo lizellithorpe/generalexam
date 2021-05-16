@@ -33,13 +33,13 @@ time to discover which physical processes govern the behavior of extrasolar worl
 and observational astronomy, where an influx of exoplanet observational data has dovetailed nicely with a surge in advancements in numerical algorithms
 over the last two decades. \\
 \indent It has been long thought that most stars spend some of their early lives in a cluster environement, a large scale body of gas that acts as a stellar nursery
- that condense into pre-stellar cores in the gas and dust \citep{lad03}. Recent work\citep{sad17} has also bolstered the theory\citep{kro95} that the majority of stars 
+ that condense into pre-stellar cores in the gas and dust \citep{lad03}. Recent work \citep{sad17} has also bolstered the theory \citep{kro95} that the majority of stars 
  are born in a stellar multiple, with their dense pre-stellar cores mutually bound together in a dusty envelope. 
  These multiple bound cores, likely formed
  via fragmentation \citep{bon94,bat03,tur09}, either stay together in a binary as interactions with their gaseous
  disk decrease the separation between the pair \citep{bat00,bat03}, or are pulled apart by a cluster environment\citep{kro01}. 
  %Dynamical interactions from a stellar cluster have also been shown to effect the orbital architecture of existing binaires. 
- While clusters can unbind so-called 'soft binaries'\citep{kro01}, dynamical interactions with a cluster are not sufficient to explain the observed
+ While clusters can unbind so-called `soft binaries'\citep{kro01}, dynamical interactions with a cluster are not sufficient to explain the observed
  period distribution of binary stars. Thus, their nascent orbital architecture results from the fragmentation process and interactions with a circumstellar disk
  early on in their lives \citep{krobur01}, and should be considered when we discuss the formation and the dynamics of planets in a holistic manner.\\
  %Planet formation likely occurs via the same pathways in binary populations as it does around single stars(\cite{bat11}). 
@@ -265,7 +265,7 @@ calculation in our chosen coordinates fairly complicated. The expression for the
 namely the planets, the binary, and the cluster star. We begin with the expression for the mass distribution of a Plummer sphere in inertial coordinates, where
 $\vec{x}$ is defined relative to the clusters's center-of-mass. 
 \begin{equation}
-\rho (\vec{x}) = \frac{3M_0}{4\pi a_0}+\biggl(1+\frac{|\vec{x}|^2}{a_0^2} \biggr)^{-5/2}
+\rho (\vec{x}) = \frac{3M_0}{4\pi a_0} \times \biggl(1+\frac{|\vec{x}|^2}{a_0^2} \biggr)^{-5/2}
 \end{equation}
 This mass distribution, where $M_0$ is the total mass in gas of the Plummer sphere and $a_0$ is a scale parameter that sets the size of the flat core region results
 in a gravitational potential of:
@@ -442,7 +442,7 @@ should focus more on the initial conditions of the binary-planet system in estab
 than initial conditions of the cluster environment.
 The frequency of destabilizations do not depend on initial binary semi-major axis, which 
 is to be expected as all of the systems are inherently stable in 
-isolation(i.e., one choice of binary separation is not inherently 'more unstable' than another). 
+isolation(i.e., one choice of binary separation is not inherently `more unstable' than another). 
 Therefore we expect that it is dynamical evolution of the system, binary included, due to the cluster environment that 
 would produce an instability. This is what we see in the vast majority of cases: chaotics interactions with passing cluster stars 
 drive the binary companion to a very eccentric orbit, allowing for close pericenter passages with the primary and its planets. \cite{kaib13}
@@ -457,7 +457,7 @@ A clear takeaway from this is that when the cluster is still bound and contains 
 in the form of the Plummer potential (the first 5Myr, \cite{all07}) and therefore more dense with stars, destabilizations are more likely to occur. A similar
 lack of stellar encounters when the stars are unbound from the gas was seen in \cite{ada06}.
 %Most of the planets, if they are destabilized, are lost from orbit before the gas of the Plummer potential dissipates, before $5 Myr$. 
-Seemingly, the architecture of planet systems is 'frozen in' once the cluster becomes unbound. The pericenter approaches 
+Seemingly, the architecture of planet systems is `frozen in' once the cluster becomes unbound. The pericenter approaches 
 that spell bad fortune for the stability of planets are driven by cluster star interactions. \\
 \indent We finally note that the unstable systems with the highest final inclination (greater than $20^{\circ}$) of the surviving planets
 all have greater than 10 instances of separate cluster members approaching within $1\times 10^4$au of the primary. An example system with an extremely inclined
@@ -469,7 +469,7 @@ During this migration, Jupiter and Saturn are pulled to $\approx 100^{\circ}$ in
     \plotone{fig/lost_planets_suite17_sim_51.png}
     \caption{The orbital evolution of the 4 giant planets and binary companion. The left panels are the distance of the object from the primary,
     where the solid line is the semi-major axis and the dashed lines are the pericenter/apocenter of the body. This particular system results in a very high
-    predicted spin-orbital angle for the jupiter and saturn mass bodies. Note the multiple 'jumps' as the binary companion 
+    predicted spin-orbital angle for the jupiter and saturn mass bodies. Note the multiple `jumps' as the binary companion 
     enters a close pericenter approach. These jumps are from encounters with cluster stars in which angular momentum is exchanged. In this
     simulation both the Uranus and Neptune mass planets become unbound and the binary companion remains bound.}
     \label{fig:stepbinary}
@@ -479,7 +479,7 @@ During this migration, Jupiter and Saturn are pulled to $\approx 100^{\circ}$ in
     %\includegraphics[width=0.5\textwidth]{fig/hist_num_total_stars.png}
     \plottwo{fig/hist_num_total_stars_bins.png}{fig/scatterplot_num_total_stars_nearby_spinorb.png}
     \caption{\textit{Left: }A normalized histogram containing results from all 3 suites of simulation depicting the distribution of 
-    number of 'close' (within 10k au) encounters the planetary system has with cluster stars. \textit{Right: }A scatterplot of the inner planet inclination
+    number of `close' (within 10k au) encounters the planetary system has with cluster stars. \textit{Right: }A scatterplot of the inner planet inclination
     versus the number of stellar encounters.}
     \label{fig:close_hist}
 \end{figure}
@@ -513,13 +513,16 @@ architecture of s-type planets with a relatively close binary is quite dynamical
 The main takeaway from this project is that the orbital architectures of surviving planets in unstable (lose at least one planet)
  versus stable (retain all four planets) have several noticeable, observable signposts. 
  Primarily, the distributions of eccentricity and the predicted spin-orbit angle of the inner gas giants in 
- unstable systems are statistically distinct from their stable counterparts. High eccentricity planets are thought to have a dynamical source \citep{dlfm97,for08}.
-  We choose to look at the 
- two inner gas giants as they are most likely to survive an instability event and thus act as good markers.
-These distributions of the final eccentricity and inclination of the inner giants are shown in Figure \ref{fig:160_ecc_inc}, 
- and a two-sample Kolmogorov-Smirnov test with an extremely small p-value ($p_{KS} = 1.32\times {10^38}$ for the eccentricity distributions
- and $p_{KS} = 1.5\times ^{-26}$ for the inclinations distributions) shows that we can reasonably reject the null hypothesis that these two sets are drawn 
- from the same parent distribution.
+ unstable systems are statistically distinct from their stable counterparts. High eccentricity planets, like the ones we 
+ see in our unstable systems, are thought to have a dynamical source. First posited
+ in \citet{ras96}, planet-planet scattering interactions can lead to ejections of some planets and a higher eccentricity for planets that remain.
+  %and later expanded on in such works like \citet{dlfm97} and \citet{for08}.
+  In our systems, often these surviving planets are the two inner gas giants. The Jupiter and Saturn mass planets 
+  thus act as good markers of a past instability, and our analysis will focus on their final orbits in each simulation.
+The distributions of the final eccentricity and inclination of the inner giants are shown in Figure \ref{fig:160_ecc_inc}, 
+ and a two-sample Kolmogorov-Smirnov test with an extremely small p-value ($p_{KS} = 1.32\times {10^{-38}}$ for the eccentricity distributions
+ and $p_{KS} = 1.5\times 10^{-26}$ for the inclinations distributions) shows that we can reasonably reject the null hypothesis that these two sets are drawn 
+ from the same parent distribution. 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\textwidth]{fig/cumulative_ecc_inc_bigfont80.png}
@@ -530,7 +533,7 @@ These distributions of the final eccentricity and inclination of the inner giant
     \label{fig:160_ecc_inc}
 \end{figure}
 Interactions with the binary companion, whether it remains bound to the primary or not, destabilize the planets via an exchange of orbital 
-momentum. If the planets stay bound, this interaction can heat up their orbits to higher eccentricities and inclinations. Often the two
+momentum. If the planets stay bound, this interaction can heat up their orbits to higher eccentricities and inclinations. Oftenthe two
 inner planets will undergo a coupled evolution as if in a rigid disk (shown in work by \cite{ina97}), reaching similar inclinations after the instability. 
 Additionally, we note that unstable systems are more likely to reach planetary orbits that have \textit{both} high inclination and high eccentricity. This 
 sort of pairing of high $\lambda$ and high eccentricity has been seen with Rossiter-McLaughlin observations
@@ -574,7 +577,9 @@ a sufficiently inclined binary cyclically exchanges angular momentum with a plan
 The presence of highly inclined gas giants in our unstable systems
 points to a similar pathway to produce these high $\lambda$ exoplanets. Excitement of the binary companion from a stellar cluster
 can cause impulsive perturbations (as opposed to longer cyclic Kozai resonances) of planetary systems that result in bound planets with 
-high predicted spin-orbit angles.
+high predicted spin-orbit angles. Noting also that the unstable systems are also likely to be very eccentric, their orbits could become 
+circularized by tidal forces, leading to a more closely orbiting hot Jupiter with a misaligned spin-orbit angle. As our simulations 
+do not include tidal forces, however, the further evolution of these unstable systems remains a mystery.
 %To take an in-depth look at inclined, unstable systems, we first want to know if we can treat all 3 suites of simulations' 
 %unstable planets as drawn from the same distribution. We should be able to do this, as the mass of the cluster has nothing to 
 %do with the interactions between binary and planets once the binary has been excited. Nevertheless, a KS test reveals that we 

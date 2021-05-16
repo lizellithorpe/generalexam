@@ -77,11 +77,9 @@ Chabrier, G. 2003, Publications of the Astronomical Society of the Pacific,
 {Chiang}, E., \& {Laughlin}, G. 2013, \mnras, 431, 3444,
   \dodoi{10.1093/mnras/stt424}
 
-\bibitem[{{de la Fuente Marcos} \& {de la Fuente Marcos}(1997)}]{dlfm97}
-{de la Fuente Marcos}, C., \& {de la Fuente Marcos}, R. 1997, \aap, 326, L21
-
 \bibitem[{{de la Fuente Marcos} \& {de la Fuente Marcos}(1999)}]{dlfm99}
----. 1999, \na, 4, 21, \dodoi{10.1016/S1384-1076(98)00043-8}
+{de la Fuente Marcos}, C., \& {de la Fuente Marcos}, R. 1999, \na, 4, 21,
+  \dodoi{10.1016/S1384-1076(98)00043-8}
 
 \bibitem[{De~Rosa {et~al.}(2020)De~Rosa, Dawson, \& Nielsen}]{dro20}
 De~Rosa, R.~J., Dawson, R., \& Nielsen, E.~L. 2020, Astronomy \& Astrophysics,
@@ -103,9 +101,6 @@ De~Rosa, R.~J., Dawson, R., \& Nielsen, E.~L. 2020, Astronomy \& Astrophysics,
 
 \bibitem[{{Fabrycky} \& {Tremaine}(2007)}]{fab07}
 {Fabrycky}, D., \& {Tremaine}, S. 2007, \apj, 669, 1298, \dodoi{10.1086/521702}
-
-\bibitem[{{Ford} \& {Rasio}(2008)}]{for08}
-{Ford}, E.~B., \& {Rasio}, F.~A. 2008, \apj, 686, 621, \dodoi{10.1086/590926}
 
 \bibitem[{{Goldreich} \& {Tremaine}(1980)}]{gol80}
 {Goldreich}, P., \& {Tremaine}, S. 1980, \apj, 241, 425, \dodoi{10.1086/158356}
@@ -220,6 +215,10 @@ Plummer, H.~C. 1911, MNRAS, 71
 
 \bibitem[{{Rafikov}(2005)}]{raf05}
 {Rafikov}, R.~R. 2005, \apjl, 621, L69, \dodoi{10.1086/428899}
+
+\bibitem[{{Rasio} \& {Ford}(1996)}]{ras96}
+{Rasio}, F.~A., \& {Ford}, E.~B. 1996, Science, 274, 954,
+  \dodoi{10.1126/science.274.5289.954}
 
 \bibitem[{{Reche} {et~al.}(2009){Reche}, {Beust}, \& {Augereau}}]{rec09}
 {Reche}, R., {Beust}, H., \& {Augereau}, J.~C. 2009, \aap, 493, 661,
