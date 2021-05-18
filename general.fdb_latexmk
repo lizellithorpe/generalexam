@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex general"] 1621124917 "general.aux" "general.bbl" "general" 1621124918
+["bibtex general"] 1621124917 "general.aux" "general.bbl" "general" 1621307455
   "aasjournal.bst.bst" 0 -1 0 ""
   "bibliography.bib" 1621124591 55409 cb20963c9ad2193180407c905a73677a ""
   "general.aux" 1621124918 9514 f58c3a6afc468e66dc56d95a96497dfe "pdflatex"
   (generated)
-  "general.bbl"
   "general.blg"
-["pdflatex"] 1621124917 "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf" "general" 1621124918
+  "general.bbl"
+["pdflatex"] 1621124917 "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf" "general" 1621307455
   "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.aux" 1621124918 9514 f58c3a6afc468e66dc56d95a96497dfe ""
-  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" 1621124913 58449 52dc00e110d79edade1ef6269669250b ""
+  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.tex" 1621307453 58449 52dc00e110d79edade1ef6269669250b ""
   "/Users/lizellithorpe/Library/texmf/tex/latex/aastex631/aastex631.cls" 1614347201 239479 b28688f0c3df5a7b8dca3f903804b0ef ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
@@ -136,11 +136,11 @@
   "general.aux" 1621124918 9514 f58c3a6afc468e66dc56d95a96497dfe "pdflatex"
   "general.bbl" 1621124917 11173 71aff9c2355294abc2cfd793a9328f6e "bibtex general"
   "general.out" 1621124918 978 d1f887714f6943eeee9eed3d75c5b51b "pdflatex"
-  "general.tex" 1621124913 58449 52dc00e110d79edade1ef6269669250b ""
+  "general.tex" 1621307453 58449 52dc00e110d79edade1ef6269669250b ""
   (generated)
-  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.log"
   "general.aux"
   "general.log"
+  "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.log"
   "general.pdf"
   "general.out"
   "/Users/lizellithorpe/Desktop/grad_school/general_exam/general.pdf"
